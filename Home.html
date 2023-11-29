@@ -18,9 +18,11 @@
       }
     </style>
   </head>
-  <body class="">
+  <body class="relative">
     <div class="bg-[url('/assets/banner.jpg')] w-full h-screen bg-cover">
-      <header class="flex justify-center items-center w-[95%] mx-auto pt-8">
+      <header
+        class="flex justify-center items-center w-[100%] mx-auto pt-[20px]"
+      >
         <div
           class="bg-[#E40306] flex items-center justify-center w-[140px] h-[70px] text-white"
         >
@@ -32,7 +34,7 @@
 
         <div class="bg-[#000000] text-white w-auto h-[70px] flex items-center">
           <nav>
-            <ul class="px-[70px] flex items-center gap-[30px]">
+            <ul class="px-[70px] flex items-center gap-[35px]">
               <li>
                 <div class="flex items-center gap-[10px]">
                   <div class="flex items-center gap-[4px]">
@@ -87,59 +89,308 @@
               </li>
             </ul>
           </nav>
-          <div class="w-auto h-auto pr-[26px]">
+          <div
+            class="w-[118px] h-[62px] flex items-center justify-center pr-[20px]"
+          >
             <img src="/assets/logo.png" alt="" />
           </div>
         </div>
       </header>
 
-      <div>
-        <h3 class="text-[40px] text-white">מצא את הנכס הבא שלך</h3>
+      <!-- banner details -->
 
-        <div class="mt-[22px] flex items-center gap-[4px]">
-          <button
-            class="text-[#000000] bg-white text-[19px] font-[500] py-[17px] px-[50px]"
-          >
-            מגרשים
-          </button>
-          <button
-            class="text-[#000000] bg-white text-[19px] font-[500] py-[17px] px-[50px]"
-          >
-            השכרה
-          </button>
-          <button
-            class="bg-[#000000] text-white text-[19px] font-[500] py-[17px] px-[50px]"
-          >
-            מכירה
-          </button>
-        </div>
+      <div class="flex flex-col items-center justify-center">
+        <div class="mt-[150px]">
+          <h3 class="text-[32px] text-right text-white">מצא את הנכס הבא שלך</h3>
 
-        <div class="mt-[4px] flex items-center gap-[4px]">
-          <button class="py-[28px] px-[55px] bg-[#E40306] text-white">
-            חפש
-          </button>
+          <div class="mt-[22px] flex items-center justify-end gap-[4px]">
+            <button
+              class="text-[#000000] bg-white text-[19px] font-[500] py-[15px] px-[50px]"
+            >
+              מגרשים
+            </button>
+            <button
+              class="text-[#000000] bg-white text-[19px] font-[500] py-[15px] px-[50px]"
+            >
+              השכרה
+            </button>
+            <button
+              class="bg-[#000000] text-white text-[19px] font-[500] py-[15px] px-[50px]"
+            >
+              מכירה
+            </button>
+          </div>
+
+          <div class="mt-[4px] flex items-center gap-[4px]">
+            <button class="py-[28px] px-[55px] bg-[#E40306] text-white">
+              חפש
+            </button>
+            <div class="bg-white w-[550px] h-[82px]">
+              <div class="grid grid-cols-3 divide-x">
+                <div class="p-[28px]">
+                  <select
+                    name=""
+                    id=""
+                    class="text-[#000000] outline-none text-[19px]"
+                  >
+                    <option value="" selected>מחיר</option>
+                    <option value="" selected>מחיר</option>
+                    <option value="" selected>מחיר</option>
+                  </select>
+                </div>
+                <div class="p-[28px] flex items-center justify-center">
+                  <select
+                    name=""
+                    id=""
+                    class="text-[#000000] outline-none text-[19px]"
+                  >
+                    <option value="" selected>מחיר</option>
+                    <option value="" selected>מחיר</option>
+                    <option value="" selected>מחיר</option>
+                  </select>
+                </div>
+                <div
+                  class="p-[28px] flex items-center justify-center gap-[30px]"
+                >
+                  <select
+                    name=""
+                    id=""
+                    class="text-[#000000] outline-none text-[19px]"
+                  >
+                    <option value="" selected>מחיר</option>
+                    <option value="" selected>מחיר</option>
+                    <option value="" selected>מחיר</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="w-[60px] h-auto">
-        <div class="px-[13px] py-[15px] bg-[#000000]">
+    </div>
+
+    <!-- product section -->
+    <section class="px-[130px] py-[70px] bg-white">
+      <!-- title -->
+      <div class="flex items-center w-full">
+        <div class="w-[39%] h-[1.5px] bg-[#000000]"></div>
+        <h3 class="text-[30px] inline-block text-[#000000] mx-[30px]">
+          נכסים מובילים
+        </h3>
+        <div class="w-[39%] h-[1.5px] bg-[#000000]"></div>
+      </div>
+      <div class="flex items-center divide-[#000000] divide-x">
+        <p class="text-[18px] text-[#000000] leading-[17px] pr-[8px]">מגרשים</p>
+        <p class="text-[18px] text-[#000000] leading-[17px] px-[8px]">השכרה</p>
+        <p class="text-[18px] text-[#000000] leading-[17px] pl-[8px]">מכירה</p>
+      </div>
+
+      <!-- products -->
+      <div class="mt-[50px]">
+        <div class="grid grid-cols-3 gap-[24px]">
+          <div class="border-r-[1px]">
+            <div class="pr-[24px]">
+              <img src="./assets/product/Bitmap Copy.png" alt="" class="" />
+              <div class="mt-[14px] pt-[11px] px-[5px] flex justify-between">
+                <h4 class="text-[17px] font-bold text-[#000000]">
+                  ₪ 13,900,000
+                </h4>
+                <div class="text-[17px] font-bold text-[#000000]">
+                  <h4>רמז דוד 6 תל אביב יפו</h4>
+                  <div class="flex items-center justify-end">
+                    <div class="border-r-[.5px] border-[#000000]">
+                      <h4 class="pr-[4px]">250 מ״ר</h4>
+                    </div>
+                    <h4 class="pl-[4px]">4 חדרים</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-r-[1px]">
+            <div class="pr-[24px]">
+              <img src="./assets/product/Bitmap Copy 2.png" alt="" class="" />
+              <div class="mt-[14px] pt-[11px] px-[5px] flex justify-between">
+                <h4 class="text-[17px] font-bold text-[#000000]">
+                  ₪ 13,900,000
+                </h4>
+                <div class="text-[17px] font-bold text-[#000000]">
+                  <h4>רמז דוד 6 תל אביב יפו</h4>
+                  <div class="flex items-center justify-end">
+                    <div class="border-r-[.5px] border-[#000000]">
+                      <h4 class="pr-[4px]">250 מ״ר</h4>
+                    </div>
+                    <h4 class="pl-[4px]">4 חדרים</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-r-[1px]">
+            <div class="pr-[24px]">
+              <img src="./assets/product/Bitmap Copy 3.png" alt="" class="" />
+              <div class="mt-[14px] pt-[11px] px-[5px] flex justify-between">
+                <h4 class="text-[17px] font-bold text-[#000000]">
+                  ₪ 13,900,000
+                </h4>
+                <div class="text-[17px] font-bold text-[#000000]">
+                  <h4>רמז דוד 6 תל אביב יפו</h4>
+                  <div class="flex items-center justify-end">
+                    <div class="border-r-[.5px] border-[#000000]">
+                      <h4 class="pr-[4px]">250 מ״ר</h4>
+                    </div>
+                    <h4 class="pl-[4px]">4 חדרים</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-r-[1px]">
+            <div class="pr-[24px]">
+              <img src="./assets/product/Bitmap Copy 4.png" alt="" class="" />
+              <div class="mt-[14px] pt-[11px] px-[5px] flex justify-between">
+                <h4 class="text-[17px] font-bold text-[#000000]">
+                  ₪ 13,900,000
+                </h4>
+                <div class="text-[17px] font-bold text-[#000000]">
+                  <h4>רמז דוד 6 תל אביב יפו</h4>
+                  <div class="flex items-center justify-end">
+                    <div class="border-r-[.5px] border-[#000000]">
+                      <h4 class="pr-[4px]">250 מ״ר</h4>
+                    </div>
+                    <h4 class="pl-[4px]">4 חדרים</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-r-[1px]">
+            <div class="pr-[24px]">
+              <img src="./assets/product/Bitmap Copy 5.png" alt="" class="" />
+              <div class="mt-[14px] pt-[11px] px-[5px] flex justify-between">
+                <h4 class="text-[17px] font-bold text-[#000000]">
+                  ₪ 13,900,000
+                </h4>
+                <div class="text-[17px] font-bold text-[#000000]">
+                  <h4>רמז דוד 6 תל אביב יפו</h4>
+                  <div class="flex items-center justify-end">
+                    <div class="border-r-[.5px] border-[#000000]">
+                      <h4 class="pr-[4px]">250 מ״ר</h4>
+                    </div>
+                    <h4 class="pl-[4px]">4 חדרים</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-r-[1px]">
+            <div class="pr-[24px]">
+              <img src="./assets/product/Bitmap Copy 6.png" alt="" class="" />
+              <div class="mt-[14px] pt-[11px] px-[5px] flex justify-between">
+                <h4 class="text-[17px] font-bold text-[#000000]">
+                  ₪ 13,900,000
+                </h4>
+                <div class="text-[17px] font-bold text-[#000000]">
+                  <h4>רמז דוד 6 תל אביב יפו</h4>
+                  <div class="flex items-center justify-end">
+                    <div class="border-r-[.5px] border-[#000000]">
+                      <h4 class="pr-[4px]">250 מ״ר</h4>
+                    </div>
+                    <h4 class="pl-[4px]">4 חדרים</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- service secetion -->
+    <div class="px-[130px] py-[70px] bg-white">
+      <!-- title -->
+      <div class="flex items-center justify-center w-full">
+        <div class="w-[36.5%] h-[1px] bg-[#000000]"></div>
+        <h3 class="text-[30px] inline-block text-[#000000] mx-[30px]">
+          אודות טוסון נכסים
+        </h3>
+        <div class="w-[37%] h-[1px] bg-[#000000]"></div>
+      </div>
+      <div class="flex items-center justify-center mt-[18px]">
+      <div class=" w-[75%]">
+        <p class="text-[15px] font-[500] leading-[17px]">
+          מוסן מנת. להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. קולורס
+          מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף להאמית קרהשק סכעיט דז מא,
+          מנכם למטכין נשואי מנורךגולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר
+          גק ליץ, ושבעגט
+        </p>
+      </div>
+       
+    </div>
+    <div class="mt-[40px]">
+      <div class="grid grid-cols-6 divide-x-[.8px]">
+          <div class="px-[10px] flex flex-col items-center justify-start">
+             <div class="w-[44px] h-[44px] flex items-center justify-center rounded-full bg-[#E40306]">
+               <img src="./assets/icon/icon-5.svg" alt="">
+             </div>
+             <p class="text-[16px] font-[500] leading-[17px]">הלקוח בראש סדר העדיפויות</p>
+          </div>
+          <div class="px-[10px] flex flex-col items-center justify-start">
+            <div class="w-[44px] h-[44px] flex items-center justify-center rounded-full bg-[#E40306]">
+              <img src="./assets/icon/icon-4.svg" alt="">
+            </div>
+            <p class="text-[16px] text-center  font-[500] leading-[17px]">סטנדרטיים בינלאומיים</p>
+         </div>
+         <div class="px-[10px] flex flex-col items-center justify-start">
+          <div class="w-[44px] h-[44px] flex items-center justify-center rounded-full bg-[#E40306]">
+            <img src="./assets/icon/icon-6.svg" alt="">
+          </div>
+          <p class="text-[16px] font-[500] leading-[17px]">זמן ממוצע למכירה כ</p>
+       </div>
+       <div class="px-[10px] flex flex-col items-center justify-start">
+        <div class="w-[44px] h-[44px] flex items-center justify-center rounded-full bg-[#E40306]">
+          <img src="./assets/icon/icon-3.svg" alt="">
+        </div>
+        <p class="text-[16px] font-[500] leading-[17px]">תכנית עבודה מסודרת בעת קבלת הנכס</p>
+     </div>
+     <div class="px-[10px] flex flex-col items-center justify-start">
+      <div class="w-[44px] h-[44px] flex items-center justify-center rounded-full bg-[#E40306]">
+        <img src="./assets/icon/icon-1.svg" alt="">
+      </div>
+      <p class="text-[16px] font-[500] leading-[17px]">י אישי לאורך תהליך</p>
+   </div>
+   <div class="px-[10px] flex flex-col items-center justify-start">
+    <div class="w-[44px] h-[44px] flex items-center justify-center rounded-full bg-[#E40306]">
+      <img src="./assets/icon/icon-2.svg" alt="">
+    </div>
+    <p class="text-[16px] font-[500] leading-[17px]">י אישי לאורך תהליך</p>
+ </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- social media -->
+    <div class="fixed bottom-[86px] left-0">
+      <div class="w-[50px] h-auto">
+        <div class="px-[12px] py-[14px] bg-[#000000]">
           <div class="space-y-[10px]">
             <div
-              class="w-[32px] h-[32px] bg-white rounded-full flex items-center justify-center"
+              class="w-[28px] h-[28px] bg-white rounded-full flex items-center justify-center"
             >
-              <img src="/assets/icon/instagram.svg" alt="" class="" />
+              <img src="/assets/icon/instagram.svg" alt="" />
             </div>
             <div
-              class="w-[32px] h-[32px] bg-white rounded-full flex items-center justify-center"
+              class="w-[28px] h-[28px] bg-white rounded-full flex items-center justify-center"
             >
               <img src="/assets/icon/fb.svg" alt="" class="" />
             </div>
             <div
-              class="w-[32px] h-[32px] bg-white rounded-full flex items-center justify-center"
+              class="w-[28px] h-[28px] bg-white rounded-full flex items-center justify-center"
             >
               <img src="/assets/icon/twiter.svg" alt="" class="" />
             </div>
             <div
-              class="w-[32px] h-[32px] bg-white rounded-full flex items-center justify-center"
+              class="w-[28px] h-[28px] bg-white rounded-full flex items-center justify-center"
             >
               <img src="/assets/icon/youtube.svg" alt="" class="" />
             </div>
