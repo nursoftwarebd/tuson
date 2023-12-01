@@ -37,9 +37,9 @@
     </style>
   </head>
   <body class="relative">
-    <div class="bg-[url('./assets/banner.jpg')] w-full h-screen bg-cover">
+    <div class="bg-[url('./assets/banner.jpg')] w-full h-screen bg-cover relative">
       <header
-        class="hidden md:flex justify-center items-center w-[100%] mx-auto pt-[20px] opacity-100"
+        class="hidden md:flex justify-center items-center w-[100%] mx-auto pt-[20px] opacity-100 relative z-10"
       >
         <div
           class="bg-[#E40306] flex items-center justify-center md:w-[110px] lg:w-[140px] h-[70px] text-white"
@@ -147,7 +147,7 @@
 
       <!-- banner details -->
 
-      <div class="flex flex-col items-center justify-center">
+      <div class="flex flex-col items-center justify-center absolute top-0 left-0 w-full bg-gradient-to-b from-zinc-800 to-gray-400/50 h-full z-0">
         <div class="mt-[150px]">
           <h3 class="text-[18px] md:text-[32px] text-right text-white">
             מצא את הנכס הבא שלך
