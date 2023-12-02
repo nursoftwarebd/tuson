@@ -22,21 +22,27 @@
     body {
       font-family: "Noto Sans Hebrew", sans-serif;
     }
+
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
   </style>
 </head>
 
 <body class="relative">
-  <div class="bg-[url('./assets/banner.jpg')] w-full h-screen bg-cover relative">
+  <div class="bg-[url('./assets/banner.jpg')] w-full h-[700px] md:h-screen bg-cover relative">
     <header class="hidden md:flex justify-center items-center w-[100%] mx-auto pt-[20px] opacity-100 relative z-10">
       <div class="bg-[#E40306] flex items-center justify-center md:w-[110px] lg:w-[140px] h-[70px] text-white">
-        <div>
-          <p class="md:text-[10px] lg:text-[12px] text-center">
+        <button>
+          <span class="md:text-[10px] lg:text-[12px] text-center block">
             לפרטים נוספי
-          </p>
-          <h5 class="md:text-[10px] lg:text-[14px] font-bold">
+          </span>
+          <span class="md:text-[10px] lg:text-[14px] font-bold block">
             077-997-9157
-          </h5>
-        </div>
+          </span>
+        </button>
       </div>
 
       <div class="bg-[#000000] text-white w-auto h-[70px] flex items-center">
@@ -44,66 +50,73 @@
           <ul class="md:px-[15px] lg:px-[70px] flex items-center justify-center md:gap-[8px] lg:gap-[35px]">
             <li>
               <div class="flex items-center md:gap-[2px] lg:gap-[10px]">
-                <div class="flex items-center md:gap-[2px] lg:gap-[6px]">
-                  <img src="./assets/flag-1.png" alt="" />
-                  <p class="md:text-[10px] lg:text-[16px] font-[500]">EN</p>
-                </div>
-                <div class="flex items-center md:gap-[2px] lg:gap-[6px]">
-                  <img src="./assets/icon/eng.svg" alt="" />
-                  <p class="md:text-[10px] lg:text-[16px] font-[500]">צר</p>
-                </div>
+                <button class="flex items-center md:gap-[2px] lg:gap-[6px]">
+                  <img src="./assets/flag-1.png" alt="england" />
+                  <span class="md:text-[10px] lg:text-[16px] font-[500] block">EN</span>
+                </button>
+                <button class="flex items-center md:gap-[2px] lg:gap-[6px]">
+                  <img src="./assets/icon/eng.svg" alt="Arab" />
+                  <span class="md:text-[10px] lg:text-[16px] font-[500] block">צר</span>
+                </button>
               </div>
             </li>
             <li>
-              <a href="#" class="md:text-[10px] lg:text-[14px] leading-[25px]">
+              <a href="#"
+                class="md:text-[10px] lg:text-[14px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 צור קשר
               </a>
             </li>
             <li>
-              <a href="#" class="md:text-[10px] lg:text-[14px] leading-[25px]">
+              <a href="#"
+                class="md:text-[10px] lg:text-[14px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 בלוג
               </a>
             </li>
             <li>
-              <a href="#" class="md:text-[10px] lg:text-[14px] leading-[25px]">
+              <a href="#"
+                class="md:text-[10px] lg:text-[14px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 פרויקטים חדשים
               </a>
             </li>
             <li>
-              <a href="#" class="md:text-[10px] lg:text-[14px] leading-[25px]">
+              <a href="#"
+                class="md:text-[10px] lg:text-[14px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 נכסים להשכרה
               </a>
             </li>
             <li>
-              <a href="#" class="md:text-[10px] lg:text-[14px] leading-[25px]">
+              <a href="#"
+                class="md:text-[10px] lg:text-[14px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 דירות למכירה
               </a>
             </li>
             <li>
-              <a href="#" class="md:text-[10px] lg:text-[14px] leading-[25px]">
+              <a href="#"
+                class="md:text-[10px] lg:text-[14px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 קטלוג נכסים
               </a>
             </li>
             <li>
-              <a href="#" class="md:text-[10px] lg:text-[14px] leading-[25px]">
+              <a href="#"
+                class="md:text-[10px] lg:text-[14px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 אודות
               </a>
             </li>
             <li>
-              <a href="#" class="md:text-[10px] lg:text-[14px] leading-[25px]">
+              <a href="#"
+                class="md:text-[10px] lg:text-[14px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 בית
               </a>
             </li>
           </ul>
         </nav>
-        <div class="md:w-[90px] lg:w-[118px] h-[62px] flex items-center justify-center pr-[20px]">
-          <img src="./assets/logo.png" alt="" />
-        </div>
+        <button class="md:w-[90px] lg:w-[118px] h-[62px] flex items-center justify-center pr-[20px]">
+          <a href="#"><img src="./assets/logo.png" alt="logo" /></a>
+        </button>
       </div>
     </header>
 
     <!-- banner details -->
-
     <div
       class="flex flex-col items-center justify-center absolute top-0 left-0 w-full bg-gradient-to-b from-zinc-800 to-gray-400/50 h-full z-0">
       <div class="mt-[150px]">
@@ -113,45 +126,66 @@
 
         <div class="mt-[12px] md:mt-[22px] flex items-center justify-end gap-[4px]">
           <button
-            class="text-[#000000] bg-white text-[14px] md:text-[19px] font-[500] py-[8px] md:py-[15px] px-[20px] md:px-[50px]">
+            class="text-[#000000] bg-white hover:text-white hover:bg-black focus:bg-black focus:text-white duration-300 text-[14px] md:text-[19px] font-[500] py-[8px] md:py-[15px] px-[20px] md:px-[50px]">
             מגרשים
           </button>
           <button
-            class="text-[#000000] bg-white text-[14px] md:text-[19px] font-[500] py-[8px] md:py-[15px] px-[20px] md:px-[50px]">
+            class="text-[#000000] bg-white hover:text-white hover:bg-black focus:bg-black focus:text-white duration-300 text-[14px] md:text-[19px] font-[500] py-[8px] md:py-[15px] px-[20px] md:px-[50px]">
             השכרה
           </button>
-          <button
-            class="bg-[#000000] text-white text-[14px] md:text-[19px] font-[500] py-[8px] md:py-[15px] px-[20px] md:px-[50px]">
+          <button autofocus="true"
+            class="text-[#000000] bg-white hover:text-white hover:bg-black focus:bg-black focus:text-white duration-300 text-[14px] md:text-[19px] font-[500] py-[8px] md:py-[15px] px-[20px] md:px-[50px] outline-none">
             מכירה
           </button>
         </div>
 
-        <div class="mt-[4px] flex items-center gap-[2px] md:gap-[4px]">
-          <button class="py-[14px] md:py-[28px] px-[28px] md:px-[55px] bg-[#E40306] text-white">
-            חפש
-          </button>
-          <div class="bg-white w-[240px] md:w-[550px] h-[53px] md:h-[82px]">
-            <div class="grid grid-cols-3 divide-x">
-              <div class="p-[12px] md:p-[28px]">
-                <select name="" id="" class="text-[#000000] outline-none text-[14px] md:text-[19px]">
-                  <option value="" selected>מחיר</option>
-                  <option value="" selected>מחיר</option>
-                  <option value="" selected>מחיר</option>
-                </select>
+        <div class="mt-1 lg:flex items-center gap-[2px] md:gap-[4px]">
+          <div class="bg-[#E40306] text-center">
+            <button class="py-6 px-[28px] md:px-[55px]  text-white">
+              חפש
+            </button>
+          </div>
+          <div class="bg-white w-full sm:w-[400px] md:w-[550px]">
+            <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-x">
+              <div class="">
+                <div class="relative">
+                  <select name="" id="" class="text-right py-6 px-4 w-full focus:outline-none">
+                    <option disabled value="מחיר">מחיר</option>
+                    <option value="מחיר">מחיר</option>
+                    <option value="מחיר">מחיר</option>
+                    <option value="מחיר">מחיר</option>
+
+                  </select>
+                  <div class="absolute top-[35px] left-3">
+                    <img src="./assets/arrow.png" alt="arrow" />
+                  </div>
+                </div>
               </div>
-              <div class="p-[12px] md:p-[28px]">
-                <select name="" id="" class="text-[#000000] outline-none text-[14px] md:text-[19px]">
-                  <option value="" selected>מחיר</option>
-                  <option value="" selected>מחיר</option>
-                  <option value="" selected>מחיר</option>
-                </select>
+              <div class="">
+                <div class="relative">
+                  <select name="" id="" class="text-right py-6 px-4 w-full focus:outline-none">
+                    <option disabled value="סוג נכס">סוג נכס</option>
+                    <option value="סוג נכס">סוג נכס</option>
+                    <option value="סוג נכס">סוג נכס</option>
+                    <option value="סוג נכס">סוג נכס</option>
+                  </select>
+                  <div class="absolute top-[35px] left-3">
+                    <img src="./assets/arrow.png" alt="arrow" />
+                  </div>
+                </div>
               </div>
-              <div class="p-[12px] md:p-[28px]">
-                <select name="" id="" class="text-[#000000] outline-none text-[14px] md:text-[19px]">
-                  <option value="" selected>מחיר</option>
-                  <option value="" selected>מחיר</option>
-                  <option value="" selected>מחיר</option>
-                </select>
+              <div class="">
+                <div class="relative">
+                  <select name="" id="" class="text-right py-6 px-4 w-full focus:outline-none">
+                    <option disabled value="אזור">אזור</option>
+                    <option value="אזור">אזור</option>
+                    <option value="אזור">אזור</option>
+                    <option value="אזור">אזור</option>
+                  </select>
+                  <div class="absolute top-[35px] left-3">
+                    <img src="./assets/arrow.png" alt="arrow" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -344,7 +378,7 @@
     </div>
     <div class="flex items-center justify-center mt-[10px] md:mt-[18px]">
       <div class="w-full md:w-[75%]">
-        <p class="text-[13px] text-center md:text-[14px] font-[500] leading-[17px]">
+        <p class="text-[13px] text-center md:text-[14px] leading-[17px]">
           מוסן מנת. להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף
           להאמית
           קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורךגולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט
@@ -352,54 +386,42 @@
       </div>
     </div>
     <div class="my-[40px]">
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-[15px] lg:gap-0 divide-x-[1.5px] divide-gray-400">
-        <div class="px-[5px] md:px-[10px] flex flex-col items-center justify-start">
-          <div class="w-[44px] h-[44px] flex items-center justify-center rounded-full bg-[#E40306]">
-            <img src="./assets/icon/icon-5.svg" alt="" />
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
+        <div class="md:border-r-2 p-3 text-center">
+          <div class="w-10 h-10 mx-auto bg-[#E40306] p-2 rounded-[50%]">
+            <img class=" w-full h-full" src="./assets/icon/icon-5.svg" alt="icon1">
           </div>
-          <p class="text-[16px] text-center font-[500] leading-[17px]">
-            הלקוח בראש סדר העדיפויות
-          </p>
+          <p class="text-sm">הלקוח בראש סדר <br> העדיפויות</p>
         </div>
-        <div class="px-[10px] flex flex-col items-center justify-start">
-          <div class="w-[44px] h-[44px] flex items-center justify-center rounded-full bg-[#E40306]">
-            <img src="./assets/icon/icon-4.svg" alt="" />
+        <div class="md:border-r-2 p-3 text-center">
+          <div class="w-10 h-10 mx-auto bg-[#E40306] p-2 rounded-[50%]">
+            <img class="w-full h-full" src="./assets/icon/icon-4.svg" alt="icon2">
           </div>
-          <p class="text-[16px] text-center font-[500] leading-[17px]">
-            סטנדרטיים בינלאומיים
-          </p>
+          <p class="text-sm">הלקוח בראש סדר <br> העדיפויות</p>
         </div>
-        <div class="px-[10px] flex flex-col items-center justify-start">
-          <div class="w-[44px] h-[44px] flex items-center justify-center rounded-full bg-[#E40306]">
-            <img src="./assets/icon/icon-6.svg" alt="" />
+        <div class="md:border-r-2 p-3 text-center">
+          <div class="w-10 h-10 mx-auto bg-[#E40306] p-2 rounded-[50%]">
+            <img class=" w-full h-full " src="./assets/icon/icon-6.svg" alt="icon1">
           </div>
-          <p class="text-[16px] text-center font-[500] leading-[17px]">
-            זמן ממוצע למכירה כ
-          </p>
+          <p class="text-sm">הלקוח בראש סדר <br> העדיפויות</p>
         </div>
-        <div class="px-[10px] flex flex-col items-center justify-start">
-          <div class="w-[44px] h-[44px] flex items-center justify-center rounded-full bg-[#E40306]">
-            <img src="./assets/icon/icon-3.svg" alt="" />
+        <div class="md:border-r-2 p-3 text-center">
+          <div class="w-10 h-10 mx-auto p-2 bg-[#E40306] rounded-[50%]">
+            <img class=" w-full h-full " src="./assets/icon/icon-3.svg" alt="icon1">
           </div>
-          <p class="text-[16px] text-center font-[500] leading-[17px]">
-            תכנית עבודה מסודרת בעת קבלת הנכס
-          </p>
+          <p class="text-sm">הלקוח בראש סדר <br> העדיפויות</p>
         </div>
-        <div class="px-[10px] flex flex-col items-center justify-start">
-          <div class="w-[44px] h-[44px] flex items-center justify-center rounded-full bg-[#E40306]">
-            <img src="./assets/icon/icon-1.svg" alt="" />
+        <div class="md:border-r-2 p-3 text-center">
+          <div class="w-10 h-10 mx-auto bg-[#E40306] p-2 rounded-[50%]">
+            <img class="w-full h-full" src="./assets/icon/icon-1.svg" alt="icon1">
           </div>
-          <p class="text-[16px] text-center font-[500] leading-[17px]">
-            י אישי לאורך תהליך
-          </p>
+          <p class="text-sm">הלקוח בראש סדר <br> העדיפויות</p>
         </div>
-        <div class="px-[10px] flex flex-col items-center justify-start">
-          <div class="w-[44px] h-[44px] flex items-center justify-center rounded-full bg-[#E40306]">
-            <img src="./assets/icon/icon-2.svg" alt="" />
+        <div class="p-3 text-center">
+          <div class="w-10 h-10 mx-auto bg-[#E40306] p-2 rounded-[50%]">
+            <img class="w-full h-full" src="./assets/icon/icon-2.svg" alt="icon1">
           </div>
-          <p class="text-[16px] text-center font-[500] leading-[17px]">
-            י אישי לאורך תהליך
-          </p>
+          <p class="text-sm">הלקוח בראש סדר <br> העדיפויות</p>
         </div>
       </div>
     </div>
