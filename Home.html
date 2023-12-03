@@ -34,9 +34,9 @@
 <body class="relative">
   <div class="bg-[url('./assets/banner.jpg')] w-full h-[700px] md:h-screen bg-cover relative">
     <header
-      class="hidden md:flex justify-center items-center w-[100%] mx-auto pt-[20px] opacity-100 relative z-10  container mx-auto">
-      <div class="bg-[#E40306] flex items-center justify-center md:w-[110px] lg:w-[140px] h-[70px] text-white">
-        <button>
+      class="block md:flex justify-center items-center w-[100%] mx-auto md:pt-[20px] opacity-100 relative z-10  container mx-auto">
+      <div class="hidden md:flex items-center justify-center">
+        <button class="md:w-[110px] lg:w-[140px] h-[70px] text-white bg-[#E40306]">
           <span class="md:text-[10px] lg:text-[12px] text-center block">
             לפרטים נוספי
           </span>
@@ -47,74 +47,77 @@
       </div>
 
       <div class="bg-[#000000] text-white w-auto h-[70px] flex items-center">
-        <nav>
+        <nav class="hidden md:block">
           <ul class="md:px-[15px] lg:px-[70px] flex items-center justify-center md:gap-[8px] lg:gap-[35px]">
             <li>
               <div class="flex items-center md:gap-[2px] lg:gap-[10px]">
                 <button class="flex items-center md:gap-[2px] lg:gap-[6px]">
                   <img src="./assets/flag-1.png" alt="england" />
-                  <span class="md:text-[10px] lg:text-[16px] font-[500] block">EN</span>
+                  <span class="md:text-[10px] lg:text-[21px] font-[500] block">EN</span>
                 </button>
                 <button class="flex items-center md:gap-[2px] lg:gap-[6px]">
                   <img src="./assets/icon/eng.svg" alt="Arab" />
-                  <span class="md:text-[10px] lg:text-[16px] font-[500] block">צר</span>
+                  <span class="md:text-[10px] lg:text-[21px] font-[500] block">צר</span>
                 </button>
               </div>
             </li>
             <li>
               <a href="#"
-                class="md:text-[10px] lg:text-[14px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                class="md:text-[10px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 צור קשר
               </a>
             </li>
             <li>
               <a href="#"
-                class="md:text-[10px] lg:text-[14px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                class="md:text-[10px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 בלוג
               </a>
             </li>
             <li>
               <a href="#"
-                class="md:text-[10px] lg:text-[14px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                class="md:text-[10px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 פרויקטים חדשים
               </a>
             </li>
             <li>
               <a href="#"
-                class="md:text-[10px] lg:text-[14px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                class="md:text-[10px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 נכסים להשכרה
               </a>
             </li>
             <li>
               <a href="#"
-                class="md:text-[10px] lg:text-[14px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                class="md:text-[10px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 דירות למכירה
               </a>
             </li>
             <li>
               <a href="#"
-                class="md:text-[10px] lg:text-[14px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                class="md:text-[10px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 קטלוג נכסים
               </a>
             </li>
             <li>
               <a href="#"
-                class="md:text-[10px] lg:text-[14px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                class="md:text-[10px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 אודות
               </a>
             </li>
             <li>
               <a href="#"
-                class="md:text-[10px] lg:text-[14px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                class="md:text-[10px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 בית
               </a>
             </li>
           </ul>
         </nav>
-        <button class="md:w-[90px] lg:w-[118px] h-[62px] flex items-center justify-center pr-[20px]">
+        <button class="w-[62px] md:w-[90px] lg:w-[118px] h-[62px] flex items-center justify-center md:pr-[20px]">
           <a href="#"><img src="./assets/logo.png" alt="logo" /></a>
         </button>
       </div>
+      <!-- <div class=" md:hidden w-full sm:w-[50%] min-h-screen fixed top-0 right-0 pt-[70px] px-10 bg-black text-white z-[999]">
+        asdfasdfasdfasdf
+      </div> -->
     </header>
 
     <!-- banner details -->
