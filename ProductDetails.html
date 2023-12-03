@@ -31,6 +31,18 @@
       font-family: "Noto Sans Hebrew", sans-serif;
     }
 
+
+    li {
+      list-style-type: none;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    li:hover {
+      color: #e40306;
+    }
+
+
     @media only screen and (max-width: 480px) {
       .slider-for img {
         width: 50%;
@@ -88,7 +100,7 @@
 
 <body class="relative">
   <div
-    class="bg-[url('/assets/details/details-header-bg.jpg')] bg-cover w-full h-[160px] md:h-[200px] lg:h-[550px] bg-opacity-75 bg-cover">
+    class="bg-[url('/assets/details/details-header-bg.jpg')] bg-cover w-full h-[260px] md:h-[400px] lg:h-[550px] bg-opacity-75 bg-cover relative">
     <header
       class="hidden md:flex justify-center items-center w-[100%] mx-auto pt-[20px] opacity-100 relative z-10  container mx-auto">
       <div class="bg-[#E40306] flex items-center justify-center md:w-[110px] lg:w-[140px] h-[70px] text-white">
@@ -173,50 +185,52 @@
       </div>
     </header>
 
-    <div class="flex items-center justify-center">
-      <div class="mt-[50px]">
-        <h3 class="text-[20px] md:text-[28px] lg:text-[35px] text-[#000000] font-bold text-center">
-          רמז דוד 6
-        </h3>
+    <!-- breadcrumb details -->
+    <section>
+      <div
+        class="w-full h-[250px] hidden md:flex flex-col justify-center items-center bg-white/50 absolute top-0 left-0 z-2">
+        <h2 class="text-black font-semibold text-3xl">קטלוג נכסים</h2>
       </div>
-    </div>
-
-    <div class="">
-      <p class="text-[16px] text-[#000000] mt-[10px] lg:mt-[20px] text-center lg:text-right lg:mr-[180px]">
-        בית > קטלוג נכסים > דירות למכירה > שם דירה
-      </p>
-    </div>
+      <div class="container text-end relative hidden md:block  md:mx-auto md:pr-44">
+        <div class="text-black flex items-center justify-end space-x-2 mt-5 md:mt-32 text-lg mr-0">
+          <li>קטלוג נכסים</li>
+          <span> > </span>
+          <li>בית</li>
+        </div>
+      </div>
+    </section>
   </div>
-  <section class="px-[20px] md:px-[50px] lg:px-[130px] pt-[50px] md:pt-[50px] lg:pt-[70px] bg-white">
+
+  <section class="px-[20px] md:px-[50px] lg:px-[130px] pt-[50px] md:pt-[50px] lg:pt-[70px] bg-white container mx-auto">
     <!-- product details -->
-    <div class="grid lg:grid-cols-5 gap-[30px]">
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-[30px]">
       <div class="lg:col-span-2">
         <div class="slider-for">
           <div>
-            <img src="./assets/blog/blog-1.jpg" alt="" style="width: 100%" />
+            <img src="./assets/blog/blog-1.jpg" alt="img" style="width: 100%" />
           </div>
           <div>
-            <img src="./assets/blog/blog-2.jpg" alt="" style="width: 100%" />
+            <img src="./assets/blog/blog-2.jpg" alt="img" style="width: 100%" />
           </div>
           <div>
-            <img src="./assets/blog/blog-3.jpg" alt="" style="width: 100%" />
+            <img src="./assets/blog/blog-3.jpg" alt="img" style="width: 100%" />
           </div>
           <div>
-            <img src="./assets/blog/blog-4.jpg" alt="" style="width: 100%" />
+            <img src="./assets/blog/blog-4.jpg" alt="img" style="width: 100%" />
           </div>
         </div>
         <div class="slider-nav">
           <div>
-            <img src="./assets/blog/blog-1.jpg" alt="" style="width: 100%" />
+            <img src="./assets/blog/blog-1.jpg" alt="img" style="width: 100%" />
           </div>
           <div>
-            <img src="./assets/blog/blog-2.jpg" alt="" style="width: 100%" />
+            <img src="./assets/blog/blog-2.jpg" alt="img" style="width: 100%" />
           </div>
           <div>
-            <img src="./assets/blog/blog-3.jpg" alt="" style="width: 100%" />
+            <img src="./assets/blog/blog-3.jpg" alt="img" style="width: 100%" />
           </div>
           <div>
-            <img src="./assets/blog/blog-4.jpg" alt="" style="width: 100%" />
+            <img src="./assets/blog/blog-4.jpg" alt="img" style="width: 100%" />
           </div>
         </div>
       </div>
@@ -290,40 +304,40 @@
     </div>
   </section>
 
-  <section class="px-[20px] md:px-[50px] lg:px-[130px] pt-[50px] md:pt-[50px] lg:pt-[70px] bg-white">
+  <section class="px-[20px] md:px-[50px] lg:px-[130px] pt-[50px] md:pt-[50px] lg:pt-[70px] bg-white container mx-auto">
     <div class="">
       <h3 class="text-[25px] font-bold text-right pb-[10px]">מפרט הנכס</h3>
-      <div class="grid grid-cols-4">
-        <div class="col-span-1"></div>
+      <div class="grid grid-cols-3 lg:grid-cols-4">
+        <div class="col-span-1 hidden lg:block"></div>
         <div class="col-span-3">
-          <div class="grid grid-cols-6 gap-[30px]">
+          <div class="grid grid-cols-2 lg:grid-cols-6 gap-[30px]">
             <div class="w-full h-[120px] bg-[#E40306] text-white flex flex-col items-center justify-center">
-              <img src="./assets/icon//d-icon-1.svg" alt="" />
+              <img class="pt-2" src="./assets/icon//d-icon-1.svg" alt="img" />
               <p class="font-[500] text-[16px]">ממד</p>
               <p class="font-[500] text-[16px]">1</p>
             </div>
             <div class="w-full h-[120px] bg-[#E40306] text-white flex flex-col items-center justify-center">
-              <img src="./assets/icon//d-icon-2.svg" alt="" />
+              <img class="pt-2" src="./assets/icon//d-icon-2.svg" alt="img" />
               <p class="font-[500] text-[16px]">חדר רחצה</p>
               <p class="font-[500] text-[16px]">1</p>
             </div>
             <div class="w-full h-[120px] bg-[#E40306] text-white flex flex-col items-center justify-center">
-              <img src="./assets/icon//d-icon-3.svg" alt="" />
+              <img class="pt-2" src="./assets/icon//d-icon-3.svg" alt="img" />
               <p class="font-[500] text-[16px]">שירותים</p>
               <p class="font-[500] text-[16px]">2</p>
             </div>
             <div class="w-full h-[120px] bg-[#E40306] text-white flex flex-col items-center justify-center">
-              <img src="./assets/icon//d-icon-4.svg" alt="" />
+              <img class="pt-2" src="./assets/icon//d-icon-4.svg" alt="img" />
               <p class="font-[500] text-[16px]">חדר שינה</p>
               <p class="font-[500] text-[16px]">4</p>
             </div>
             <div class="w-full h-[120px] bg-[#E40306] text-white flex flex-col items-center justify-center">
-              <img src="./assets/icon//d-icon-5.svg" alt="" />
+              <img class="pt-2" src="./assets/icon//d-icon-5.svg" alt="img" />
               <p class="font-[500] text-[16px]">חדר שינה</p>
               <p class="font-[500] text-[16px]">2</p>
             </div>
             <div class="w-full h-[120px] bg-[#E40306] text-white flex flex-col items-center justify-center">
-              <img src="./assets/icon//d-icon-6.svg" alt="" />
+              <img class="pt-2" src="./assets/icon//d-icon-6.svg" alt="img" />
               <p class="font-[500] text-[16px]">חדר שינה</p>
               <p class="font-[500] text-[16px]">2</p>
             </div>
@@ -331,72 +345,78 @@
         </div>
       </div>
     </div>
-    <div class="grid grid-cols-6 gap-[30px] mt-[40px]">
+    <div class="grid grid-cols-2 lg:grid-cols-6 gap-[30px] mt-[40px] ">
       <div>
         <div class="text-right flex items-center justify-end gap-[8px]">
           <label for="" class="text-[16px] leading-[25px]">חדשה /משופצת</label>
-          <input type="checkbox" class="accent-[#E40306] rounded-full outline-[#E40306] text-white w-[14px] h-[14px]" />
+          <input checked type="checkbox"
+            class="accent-[#E40306] rounded-full outline-[#E40306] text-white w-[14px] h-[14px]" />
         </div>
         <div class="text-right flex items-center justify-end gap-[8px]">
           <label for="" class="text-[16px] leading-[25px]">מחסן</label>
-          <input type="checkbox" class="accent-[#E40306] outline-[#E40306] text-white w-[14px] h-[14px]" />
+          <input checked type="checkbox" class="accent-[#E40306] outline-[#E40306] text-white w-[14px] h-[14px]" />
         </div>
       </div>
       <div>
         <div class="text-right flex items-center justify-end gap-[8px]">
           <label for="" class="text-[16px] leading-[25px]">דוד שמש</label>
-          <input type="checkbox" class="accent-[#E40306] rounded-full outline-[#E40306] text-white w-[14px] h-[14px]" />
+          <input checked type="checkbox"
+            class="accent-[#E40306] rounded-full outline-[#E40306] text-white w-[14px] h-[14px]" />
         </div>
         <div class="text-right flex items-center justify-end gap-[8px]">
           <label for="" class="text-[16px] leading-[25px]">נגישות לנכים</label>
-          <input type="checkbox" class="accent-[#E40306] outline-[#E40306] text-white w-[14px] h-[14px]" />
+          <input checked type="checkbox" class="accent-[#E40306] outline-[#E40306] text-white w-[14px] h-[14px]" />
         </div>
       </div>
       <div>
         <div class="text-right flex items-center justify-end gap-[8px]">
           <label for="" class="text-[16px] leading-[25px]">מטבח כשר</label>
-          <input type="checkbox" class="accent-[#E40306] rounded-full outline-[#E40306] text-white w-[14px] h-[14px]" />
+          <input checked type="checkbox"
+            class="accent-[#E40306] rounded-full outline-[#E40306] text-white w-[14px] h-[14px]" />
         </div>
         <div class="text-right flex items-center justify-end gap-[8px]">
           <label for="" class="text-[16px] leading-[25px]">ריהוט</label>
-          <input type="checkbox" class="accent-[#E40306] outline-[#E40306] text-white w-[14px] h-[14px]" />
+          <input checked type="checkbox" class="accent-[#E40306] outline-[#E40306] text-white w-[14px] h-[14px]" />
         </div>
       </div>
       <div>
         <div class="text-right flex items-center justify-end gap-[8px]">
           <label for="" class="text-[16px] leading-[25px]">מיזוג</label>
-          <input type="checkbox" class="accent-[#E40306] rounded-full outline-[#E40306] text-white w-[14px] h-[14px]" />
+          <input checked type="checkbox"
+            class="accent-[#E40306] rounded-full outline-[#E40306] text-white w-[14px] h-[14px]" />
         </div>
         <div class="text-right flex items-center justify-end gap-[8px]">
           <label for="" class="text-[16px] leading-[25px]">יחידת דיור</label>
-          <input type="checkbox" class="accent-[#E40306] outline-[#E40306] text-white w-[14px] h-[14px]" />
+          <input checked type="checkbox" class="accent-[#E40306] outline-[#E40306] text-white w-[14px] h-[14px]" />
         </div>
       </div>
       <div>
         <div class="text-right flex items-center justify-end gap-[8px]">
           <label for="" class="text-[16px] leading-[25px]">מותאם לשותפים</label>
-          <input type="checkbox" class="accent-[#E40306] rounded-full outline-[#E40306] text-white w-[14px] h-[14px]" />
+          <input checked type="checkbox"
+            class="accent-[#E40306] rounded-full outline-[#E40306] text-white w-[14px] h-[14px]" />
         </div>
         <div class="text-right flex items-center justify-end gap-[8px]">
           <label for="" class="text-[16px] leading-[25px]">חיות מחמד</label>
-          <input type="checkbox" class="accent-[#E40306] outline-[#E40306] text-white w-[14px] h-[14px]" />
+          <input checked type="checkbox" class="accent-[#E40306] outline-[#E40306] text-white w-[14px] h-[14px]" />
         </div>
       </div>
       <div>
         <div class="text-right flex items-center justify-end gap-[8px]">
           <label for="" class="text-[16px] leading-[25px]">מעלית</label>
-          <input type="checkbox" class="accent-[#E40306] rounded-full outline-[#E40306] text-white w-[14px] h-[14px]" />
+          <input checked type="checkbox"
+            class="accent-[#E40306] rounded-full outline-[#E40306] text-white w-[14px] h-[14px]" />
         </div>
         <div class="text-right flex items-center justify-end gap-[8px]">
           <label for="" class="text-[16px] leading-[25px]">סורגים</label>
-          <input type="checkbox" class="accent-[#E40306] outline-[#E40306] text-white w-[14px] h-[14px]" />
+          <input checked type="checkbox" class="accent-[#E40306] outline-[#E40306] text-white w-[14px] h-[14px]" />
         </div>
       </div>
     </div>
     <div class="mt-[60px]">
-      <div class="grid grid-cols-2 gap-[35px]">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-end">
         <div>
-          <h3 class="text-[30px] text-center text-[#000000bd]">
+          <h3 class="text-2xl lg:text-3xl text-center text-[#000000bd]">
             צור קשר לקבלת מידע ופרטים נוספים
           </h3>
           <form action="" class="mt-[30px] space-y-[2px]">
@@ -414,18 +434,18 @@
             </button>
           </form>
         </div>
-        <div class="">
-          <img src="./assets/details-us.png" alt="" class="pb-[40px] pl-[40px]" />
+        <div>
+          <img class="w-full h-full" src="./assets/details-us.png" alt="img" class="" />
         </div>
       </div>
     </div>
   </section>
 
-  <section class="px-[20px] md:px-[50px] lg:px-[130px] pt-[50px] md:pt-[50px] lg:py-[70px] bg-white">
+  <section class="px-[20px] md:px-[50px] lg:px-[130px] pt-[50px] md:pt-[50px] lg:py-[70px] bg-white container mx-auto">
     <!-- title -->
     <div class="flex items-center w-full">
       <div class="w-[38%] h-[1.5px] bg-[#000000]"></div>
-      <div class="w-[24%] flex items-center justify-center">
+      <div class="w-full md:w-[24%] flex items-center justify-center">
         <h3 class="text-[16px] px-[5px] md:text-[17px] lg:text-[30px] inline-block text-[#000000]">
           נכסים דומים
         </h3>
@@ -433,61 +453,54 @@
       <div class="w-[38%] h-[1.5px] bg-[#000000]"></div>
     </div>
     <!-- products -->
-    <div class="mt-[50px]">
-      <div class="grid md:grid-cols-3 gap-[15px] md:gap-[24px]">
-        <div class="border-r-[1px]">
-          <div class="pr-[24px]">
-            <img src="./assets/product/Bitmap Copy.png" alt="" class="" />
-            <div class="mt-[14px] pt-[11px] px-[5px] flex justify-between">
-              <h4 class="text-[17px] font-bold text-[#000000]">
-                ₪ 15,900,000
-              </h4>
-              <div class="text-[17px] text-[#000000]">
-                <h4>רמז דוד 6 תל אביב יפו</h4>
-                <div class="flex items-center justify-end">
-                  <div class="border-r-[.5px] border-[#000000]">
-                    <h4 class="pr-[4px]">250 מ״ר</h4>
-                  </div>
-                  <h4 class="pl-[4px]">4 חדרים</h4>
-                </div>
+    <div class="mt-[50px] mb-12 lg:mb-0">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-[15px] md:gap-[24px]">
+        <div class="hover:shadow hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
+          <div class="md:mr-[24px] pb-5 relative z-10  border-b-[1.5px] border-gray-400 md:border-b-0">
+            <img class="w-full h-full" src="./assets/product/Bitmap Copy 2.png" alt="product" class="" />
+            <div class="mt-[18px] flex justify-between items-start">
+              <h4 class="text-right text-[#000000] text-sm">₪ 13,900,000</h4>
+              <div class="text-[15px] text-right leading-[22px]">
+                רמז דוד 6 תל אביב יפו
+                <p>
+                  <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
+                </p>
               </div>
             </div>
           </div>
+          <div
+            class="hidden md:block w-full h-[90%] absolute top-0 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
+          </div>
         </div>
-        <div class="border-r-[1px]">
-          <div class="pr-[24px]">
-            <img src="./assets/product/Bitmap Copy 2.png" alt="" class="" />
-            <div class="mt-[14px] pt-[11px] px-[5px] flex justify-between">
-              <h4 class="text-[17px] font-bold text-[#000000]">
-                ₪ 13,900,000
-              </h4>
-              <div class="text-[17px] text-[#000000]">
-                <h4>רמז דוד 6 תל אביב יפו</h4>
-                <div class="flex items-center justify-end">
-                  <div class="border-r-[.5px] border-[#000000]">
-                    <h4 class="pr-[4px]">250 מ״ר</h4>
-                  </div>
-                  <h4 class="pl-[4px]">4 חדרים</h4>
-                </div>
+        <div class="md:hover:shadow hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
+          <div class="md:mr-[24px] pb-5 relative z-10 border-b-[1.5px] border-gray-400 md:border-b-0">
+            <div class="relative">
+              <img class="w-full h-full" src="./assets/product/Bitmap Copy.png" alt="product" class="" />
+            </div>
+            <div class="mt-[18px] flex justify-between items-start">
+              <h4 class="text-right text-[#000000] text-sm">₪ 6,950,000</h4>
+              <div class="text-[15px] text-right leading-[22px]">
+                בארי תל אביב יפו
+                <p>
+                  <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
+                </p>
               </div>
             </div>
           </div>
+          <div
+            class="hidden md:block w-full h-[90%] absolute top-0 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
+          </div>
         </div>
-        <div class="border-r-[1px]">
-          <div class="pr-[24px]">
-            <img src="./assets/product/Bitmap Copy 3.png" alt="" class="" />
-            <div class="mt-[14px] pt-[11px] px-[5px] flex justify-between">
-              <h4 class="text-[17px] font-bold text-[#000000]">
-                ₪ 13,900,000
-              </h4>
-              <div class="text-[17px] text-[#000000]">
-                <h4>רמז דוד 6 תל אביב יפו</h4>
-                <div class="flex items-center justify-end">
-                  <div class="border-r-[.5px] border-[#000000]">
-                    <h4 class="pr-[4px]">250 מ״ר</h4>
-                  </div>
-                  <h4 class="pl-[4px]">4 חדרים</h4>
-                </div>
+        <div class="hover:shadow hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
+          <div class="md:mr-[24px] pb-5 relative z-10">
+            <img class="w-full h-full" src="./assets/product/Bitmap Copy 5.png" alt="product" class="" />
+            <div class="mt-[18px] flex justify-between items-start">
+              <h4 class="text-right text-[#000000] text-sm">₪ 8,750,000</h4>
+              <div class="text-[15px] text-right leading-[22px]">
+                פנקס תל אביב יפו
+                <p>
+                  <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
+                </p>
               </div>
             </div>
           </div>
@@ -518,7 +531,7 @@
             </div>
           </form>
         </div>
-        <div>
+        <div class="mt-10 lg:mt-0">
           <h4 class="text-[17px] text-right font-bold leading-[24px]">
             פרטי התקשרות
           </h4>
@@ -630,6 +643,7 @@
       arrows: false,
       fade: false,
       asNavFor: ".slider-nav",
+
     });
     $(".slider-nav").slick({
       slidesToShow: 3,
