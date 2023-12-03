@@ -32,6 +32,61 @@
     #menu {
       display: none;
     }
+
+    .selector {
+      cursor: pointer;
+    }
+
+    #selectField,
+    #selectField2,
+    #selectField3 {
+      width: 100%;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* margin-bottom: 30px; */
+    }
+
+    #selectField img,
+    #selectField2 img,
+    #selectField3 img {
+      transition: transform 0.5s;
+    }
+
+    #list,
+    #list2,
+    #list3 {
+      width: 100%;
+      background: white;
+      text-align: right;
+      overflow: hidden;
+    }
+
+    .options,
+    .options2,
+    .options3 {
+      padding: 5px 20px;
+      box-sizing: border-box;
+      list-style: none;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .options:hover,
+    .options2:hover,
+    .options3:hover {
+      background: #E40306;
+      color: white;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .rotate {
+      transform: rotate(180deg);
+    }
   </style>
 </head>
 
@@ -241,52 +296,79 @@
 
         <div class="mt-1 lg:flex items-center gap-[2px] md:gap-[4px]">
           <div class="bg-[#E40306] text-center">
-            <button class="py-6 px-[28px] md:px-[55px]  text-[19px] text-white">
+            <button class="py-[15px] px-[28px] md:px-[55px]  text-[19px] text-white">
               חפש
             </button>
           </div>
           <div class="bg-white w-full sm:w-[400px] md:w-[550px]">
-            <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-x text-[19px] font-medium">
+            <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x text-[19px] font-medium">
               <div class="">
-                <div class="relative">
-                  <select name="" id="" class="text-right py-6 px-4 w-full focus:outline-none">
-                    <option disabled value="מחיר">מחיר</option>
-                    <option value="מחיר">מחיר</option>
-                    <option value="מחיר">מחיר</option>
-                    <option value="מחיר">מחיר</option>
+                <div class="selector relative">
+                  <div id="selectField">
+                    <img src="./assets/arrow.png" alt="arrow" id="arrowIcon" />
+                    <p id="selectText">מחיר</p>
+                  </div>
+                  <ul id="list" class="hide absolute top-[110%]">
+                    <li class="options">
+                      <p>1 מחיר</p>
+                    </li>
+                    <li class="options">
+                      <p>2 מחיר</p>
+                    </li>
+                    <li class="options">
+                      <p>3 מחיר</p>
+                    </li>
+                    <li class="options">
+                      <p>4 מחיר</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="">
+                <div class="selector relative">
+                  <div id="selectField2">
+                    <img src="./assets/arrow.png" alt="arrow" id="arrowIcon2" />
+                    <p id="selectText2">מחיר</p>
+                  </div>
+                  <ul id="list2" class="hide absolute top-[110%]">
+                    <li class="options2">
+                      <p>1 מחיר</p>
+                    </li>
+                    <li class="options2">
+                      <p>2 מחיר</p>
+                    </li>
+                    <li class="options2">
+                      <p>3 מחיר</p>
+                    </li>
+                    <li class="options2">
+                      <p>4 מחיר</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="">
+                <div class="selector relative">
+                  <div id="selectField3">
+                    <img src="./assets/arrow.png" alt="arrow" id="arrowIcon3" />
+                    <p id="selectText3">מחיר</p>
+                  </div>
+                  <ul id="list3" class="hide absolute top-[110%]">
+                    <li class="options3">
+                      <p>1 מחיר</p>
+                    </li>
+                    <li class="options3">
+                      <p>2 מחיר</p>
+                    </li>
+                    <li class="options3">
+                      <p>3 מחיר</p>
+                    </li>
+                    <li class="options3">
+                      <p>4 מחיר</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
-                  </select>
-                  <div class="absolute top-[35px] left-3">
-                    <img src="./assets/arrow.png" alt="arrow" />
-                  </div>
-                </div>
-              </div>
-              <div class="">
-                <div class="relative">
-                  <select name="" id="" class="text-right py-6 px-4 w-full focus:outline-none">
-                    <option disabled value="סוג נכס">סוג נכס</option>
-                    <option value="סוג נכס">סוג נכס</option>
-                    <option value="סוג נכס">סוג נכס</option>
-                    <option value="סוג נכס">סוג נכס</option>
-                  </select>
-                  <div class="absolute top-[35px] left-3">
-                    <img src="./assets/arrow.png" alt="arrow" />
-                  </div>
-                </div>
-              </div>
-              <div class="">
-                <div class="relative">
-                  <select name="" id="" class="text-right py-6 px-4 w-full focus:outline-none">
-                    <option disabled value="אזור">אזור</option>
-                    <option value="אזור">אזור</option>
-                    <option value="אזור">אזור</option>
-                    <option value="אזור">אזור</option>
-                  </select>
-                  <div class="absolute top-[35px] left-3">
-                    <img src="./assets/arrow.png" alt="arrow" />
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -851,6 +933,69 @@
     const handleClick = () => {
       menuBar.style.display = (menuBar.style.display === "none" || menuBar.style.display === "") ? "block" : "none";
     }
+
+    //  dropdown select options
+    const options = document.getElementsByClassName("options");
+    const options2 = document.getElementsByClassName("options2");
+    const options3 = document.getElementsByClassName("options3");
+
+    const selectField = document.getElementById("selectField");
+    const selectText = document.getElementById("selectText");
+    const arrowIcon = document.getElementById("arrowIcon")
+    const list = document.getElementById("list")
+
+    const selectField2 = document.getElementById("selectField2");
+    const selectText2 = document.getElementById("selectText2");
+    const arrowIcon2 = document.getElementById("arrowIcon2")
+    const list2 = document.getElementById("list2")
+
+    const selectField3 = document.getElementById("selectField3");
+    const selectText3 = document.getElementById("selectText3");
+    const arrowIcon3 = document.getElementById("arrowIcon3")
+    const list3 = document.getElementById("list3")
+
+
+    selectField.onclick = function () {
+      list.classList.toggle("hide")
+      arrowIcon.classList.toggle("rotate")
+    }
+
+    selectField2.onclick = function () {
+      list2.classList.toggle("hide")
+      arrowIcon2.classList.toggle("rotate")
+    }
+
+    selectField3.onclick = function () {
+      list3.classList.toggle("hide")
+      arrowIcon3.classList.toggle("rotate")
+    }
+
+    for (option of options) {
+      option.onclick = function () {
+        selectText.innerHTML = this.textContent;
+        list.classList.toggle("hide");
+        arrowIcon.classList.toggle("rotate")
+
+      }
+    }
+
+    for (option of options2) {
+      option.onclick = function () {
+        selectText2.innerHTML = this.textContent;
+        list2.classList.toggle("hide");
+        arrowIcon2.classList.toggle("rotate")
+      }
+    }
+
+    for (option of options3) {
+      option.onclick = function () {
+        selectText3.innerHTML = this.textContent;
+        list3.classList.toggle("hide");
+        arrowIcon3.classList.toggle("rotate")
+      }
+    }
+
+
   </script>
 </body>
 
