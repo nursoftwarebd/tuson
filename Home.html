@@ -28,96 +28,192 @@
       -moz-appearance: none;
       appearance: none;
     }
+
+    #menu {
+      display: none;
+    }
   </style>
 </head>
 
 <body class="relative">
   <div class="bg-[url('./assets/banner.jpg')] w-full h-[700px] md:h-screen bg-cover relative">
-    <header
-      class="block md:flex justify-center items-center w-[100%] mx-auto md:pt-[20px] opacity-100 relative z-10  container mx-auto">
-      <div class="hidden md:flex items-center justify-center">
+    <header class="block md:flex justify-center items-center w-[100%] mx-auto lg:pt-[20px] opacity-100 relative z-10  ">
+      <div class="hidden lg:flex items-center justify-center">
         <button class="md:w-[110px] lg:w-[140px] h-[70px] text-white bg-[#E40306]">
-          <span class="md:text-[10px] lg:text-[12px] text-center block">
+          <span class="md:text-[10px] lg:text-[16px] text-center block leading-tight">
             לפרטים נוספי
           </span>
-          <span class="md:text-[10px] lg:text-[14px] font-bold block">
+          <span class="md:text-[10px] lg:text-[14px] 2xl:text-[18px] font-bold block leading-tight">
             077-997-9157
           </span>
         </button>
       </div>
 
-      <div class="bg-[#000000] text-white w-auto h-[70px] flex items-center">
-        <nav class="hidden md:block">
-          <ul class="md:px-[15px] lg:px-[70px] flex items-center justify-center md:gap-[8px] lg:gap-[35px]">
+      <div class="bg-[#000000] text-white w-full lg:w-auto h-[70px] flex items-center justify-between lg:justify-start">
+        <nav class="hidden lg:block">
+          <ul class="md:px-[15px] lg:px-[70px] flex items-center justify-center md:gap-[10px] 2xl:gap-[35px]">
             <li>
               <div class="flex items-center md:gap-[2px] lg:gap-[10px]">
                 <button class="flex items-center md:gap-[2px] lg:gap-[6px]">
                   <img src="./assets/flag-1.png" alt="england" />
-                  <span class="md:text-[10px] lg:text-[21px] font-[500] block">EN</span>
+                  <span class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] font-[500] block">EN</span>
                 </button>
                 <button class="flex items-center md:gap-[2px] lg:gap-[6px]">
                   <img src="./assets/icon/eng.svg" alt="Arab" />
-                  <span class="md:text-[10px] lg:text-[21px] font-[500] block">צר</span>
+                  <span class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] font-[500] block">צר</span>
                 </button>
               </div>
             </li>
             <li>
               <a href="#"
-                class="md:text-[10px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 צור קשר
               </a>
             </li>
             <li>
               <a href="#"
-                class="md:text-[10px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 בלוג
               </a>
             </li>
             <li>
               <a href="#"
-                class="md:text-[10px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 פרויקטים חדשים
               </a>
             </li>
             <li>
               <a href="#"
-                class="md:text-[10px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 נכסים להשכרה
               </a>
             </li>
             <li>
               <a href="#"
-                class="md:text-[10px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 דירות למכירה
               </a>
             </li>
             <li>
               <a href="#"
-                class="md:text-[10px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 קטלוג נכסים
               </a>
             </li>
             <li>
               <a href="#"
-                class="md:text-[10px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 אודות
               </a>
             </li>
             <li>
               <a href="#"
-                class="md:text-[10px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                 בית
               </a>
             </li>
           </ul>
         </nav>
         <button class="w-[62px] md:w-[90px] lg:w-[118px] h-[62px] flex items-center justify-center md:pr-[20px]">
-          <a href="#"><img src="./assets/logo.png" alt="logo" /></a>
+          <img src="./assets/logo.png" alt="logo" />
         </button>
+        <div class="mr-3 block lg:hidden">
+          <button onclick="handleClick()" class="text-white">
+            <svg width="36px" height="36px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path d="M4 6H20M4 12H20M4 18H20" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                </path>
+              </g>
+            </svg>
+          </button>
+        </div>
       </div>
-      <!-- <div class=" md:hidden w-full sm:w-[50%] min-h-screen fixed top-0 right-0 pt-[70px] px-10 bg-black text-white z-[999]">
-        asdfasdfasdfasdf
-      </div> -->
+      <div id="menu"
+        class="lg:!hidden w-[80%] sm:w-[50%] min-h-screen fixed top-0 right-0 pt-[70px] px-10 bg-black text-white z-[999]">
+        <div class="absolute top-[15px] right-3">
+          <button onclick="handleClick()" class="text-white">
+            <svg width="36px" height="36px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <g id="Menu / Close_MD">
+                  <path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#fff" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+        <div class="text-white mt-5">
+          <ul class="space-y-4">
+            <li>
+              <a href="#"
+                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                בית
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                אודות
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                קטלוג נכסים
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                דירות למכירה
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                נכסים להשכרה
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                פרויקטים חדשים
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                בלוג
+              </a>
+            </li>
+
+            <li>
+              <a href="#"
+                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                צור קשר
+              </a>
+            </li>
+
+            <li>
+              <div class="flex items-center gap-[10px]">
+                <button class="flex items-center gap-[6px]">
+                  <img src="./assets/flag-1.png" alt="england" />
+                  <span class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] font-[500] block">EN</span>
+                </button>
+                <button class="flex items-center gap-[6px]">
+                  <img src="./assets/icon/eng.svg" alt="Arab" />
+                  <span class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] font-[500] block">צר</span>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <!-- banner details -->
@@ -225,7 +321,8 @@
     <!-- products -->
     <div class="mt-[50px] relative">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[15px] md:gap-[24px]">
-        <div class="hover:shadow hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
+        <div
+          class="hover:hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
           <div class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative z-10">
             <img class="w-full h-full" src="./assets/product/Bitmap Copy 2.png" alt="product" class="" />
             <div class="mt-[18px] flex justify-between items-start">
@@ -242,7 +339,8 @@
             class="hidden md:block w-full h-[85%] absolute top-5 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
           </div>
         </div>
-        <div class="hover:shadow hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
+        <div
+          class="hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
           <div class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative z-10">
             <img class="w-full h-full" src="./assets/product/Bitmap Copy.png" alt="product" class="" />
             <div class="mt-[18px] flex justify-between items-start">
@@ -259,7 +357,8 @@
             class="hidden md:block w-full h-[85%] absolute top-5 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
           </div>
         </div>
-        <div class="hover:shadow hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
+        <div
+          class="hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
           <div class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative z-10">
             <img class="w-full h-full" src="./assets/product/Group 11.png" alt="product" class="" />
             <div class="mt-[18px] flex justify-between items-start">
@@ -273,7 +372,8 @@
             </div>
           </div>
         </div>
-        <div class="hover:shadow hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
+        <div
+          class="hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
           <div class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative z-10">
             <div class="relative">
               <img class="w-full h-full" src="./assets/product/Bitmap Copy 5.png" alt="product" class="" />
@@ -298,7 +398,8 @@
           </div>
 
         </div>
-        <div class="hover:shadow hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
+        <div
+          class="hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
           <div class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative z-10">
             <img class="w-full h-full" src="./assets/product/Bitmap Copy 4.png" alt="product" class="" />
             <div class="mt-[18px] flex justify-between items-start">
@@ -315,7 +416,8 @@
             class="hidden md:block w-full h-[90%] absolute top-0 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
           </div>
         </div>
-        <div class="hover:shadow hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
+        <div
+          class="hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
           <div class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative z-10">
             <div class="relative">
               <img class="w-full h-full" src="./assets/product/Bitmap Copy 3.png" alt="product" class="" />
@@ -336,7 +438,8 @@
             </div>
           </div>
         </div>
-        <div class="hover:shadow hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
+        <div
+          class="hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
           <div class="md:mr-[24px] pb-5 relative z-10 border-b-[1.5px] border-gray-400 md:border-b-0">
             <img class="w-full h-full" src="./assets/product/Bitmap Copy 2.png" alt="product" class="" />
             <div class="mt-[18px] flex justify-between items-start">
@@ -353,7 +456,8 @@
             class="hidden md:block w-full h-[90%] absolute top-0 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
           </div>
         </div>
-        <div class="md:hover:shadow hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
+        <div
+          class="md:hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
           <div class="md:mr-[24px] pb-5 relative z-10 border-b-[1.5px] border-gray-400 md:border-b-0">
             <div class="relative">
               <img class="w-full h-full" src="./assets/product/Bitmap Copy.png" alt="product" class="" />
@@ -377,7 +481,8 @@
             class="hidden md:block w-full h-[90%] absolute top-0 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
           </div>
         </div>
-        <div class="hover:shadow hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
+        <div
+          class="hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
           <div class="md:mr-[24px] pb-5 relative z-10">
             <img class="w-full h-full" src="./assets/product/Bitmap Copy 5.png" alt="product" class="" />
             <div class="mt-[18px] flex justify-between items-start">
@@ -740,6 +845,13 @@
       </div>
     </div>
   </div>
+
+  <script>
+    const menuBar = document.getElementById("menu");
+    const handleClick = () => {
+      menuBar.style.display = (menuBar.style.display === "none" || menuBar.style.display === "") ? "block" : "none";
+    }
+  </script>
 </body>
 
 </html>
