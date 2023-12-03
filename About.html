@@ -21,11 +21,21 @@
     body {
       font-family: "Noto Sans Hebrew", sans-serif;
     }
+
+    li {
+      list-style-type: none;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    li:hover {
+      color: #e40306;
+    }
   </style>
 </head>
 
 <body class="relative">
-  <div class="bg-[url('/assets/breadcrumb-bg.jpg')] w-full h-[160px] md:h-[200px] lg:h-[250px] bg-opacity-75 bg-cover">
+  <div class="bg-[url('./assets/breadcrumb-bg.jpg')] w-full h-full md:h-[345px] bg-cover relative z-0">
     <header
       class="hidden md:flex justify-center items-center w-[100%] mx-auto pt-[20px] opacity-100 relative z-10  container mx-auto">
       <div class="bg-[#E40306] flex items-center justify-center md:w-[110px] lg:w-[140px] h-[70px] text-white">
@@ -110,37 +120,46 @@
       </div>
     </header>
 
-    <div class="flex items-center justify-center">
-      <div class="mt-[50px]">
-        <h3 class="text-[35px] text-[#000000] font-bold text-center">
-          אודות
-        </h3>
+    <!-- breadcrumb -->
+    <section>
+      <div
+        class="w-full h-full hidden md:flex flex-col justify-center items-center bg-white/50 absolute top-0 left-0 z-2">
+        <h2 class="text-black font-semibold text-3xl">אודות</h2>
       </div>
-    </div>
+      <div class="container text-end relative hidden md:block">
+        <div class="text-black flex items-center justify-end space-x-2 mt-5 md:mt-52 text-lg mr-10">
+          <li>אודות</li>
+          <span> > </span>
+          <li>בית</li>
+        </div>
+      </div>
+    </section>
   </div>
 
-  <section class="px-[20px] md:px-[50px] lg:px-[130px] pt-[50px] md:pt-[50px] lg:pt-[70px] bg-white">
-    <div class="grid lg:grid-cols-5 gap-[20px] md:gap-[30px] lg:gap-[40px]">
+  <section class="px-[20px] md:px-[50px] lg:px-[130px] pt-[50px] md:pt-[50px] lg:pt-[70px] bg-white container mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-5 md:gap-8">
       <div class="lg:col-span-2">
-        <img src="./assets/about-us.png" alt="" class="w-full h-[320px] md:h-[450px] lg:h-full" />
+
+        <img src="./assets/about-us.png" alt="about img" class="w-full h-full" />
+
       </div>
       <div class="lg:col-span-3 text-right text-[#000000]">
-        <h3 class="text-[20px] md:text-[28px] lg:text-[35px]">טוסון נכסים</h3>
+        <h3 class="text-[20px] lg:text-[24px] xl:text-[35px]">טוסון נכסים</h3>
         <div class="flex items-center justify-end gap-[10px]">
-          <div class="w-[55%] h-[1.5px] bg-[#000000]"></div>
-          <h3 class="text-[20px] md:text-[28px] lg:text-[35px] font-bold">
+          <div class="w-[40%] md:w-[50%] 2xl:w-[55%] h-[1.5px] bg-[#000000]"></div>
+          <h3 class="text-[20px] lg:text-[24px] xl:text-[35px] font-bold">
             למה לעבוד אתנו?
           </h3>
         </div>
-        <div class="pl-[10px] md:pl-[20px] lg:pl-[30px]">
-          <p class="text-[12px] md:text-[14px] lg:text-[15px] text-right font-[500] leading-[25px]">
+        <div class=" text-[10px] md:text-[14px] xl:text-lg pl-[10px] md:pl-[20px] lg:pl-[30px]">
+          <p class=" text-right ">
             לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית צש בליא,
             מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק. נולום ארווס
             סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק
             מונופץ קליר, בנפת נפקט למסון בלרק - וענוף להאמית קרהשק סכעיט דז
             מא, מנכם למטכין נשואי מנורךגולר מונפרר סוברט לורם שבצק יהול
           </p>
-          <p class="mt-[6px] text-[12px] md:text-[14px] lg:text-[15px] text-right font-[500] leading-[25px]">
+          <p class="mt-[6px]  text-right ">
             לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית צש בליא,
             מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק. נולום ארווס
             סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק
@@ -149,85 +168,88 @@
           </p>
         </div>
         <div class="mt-[50px]">
-          <div class="grid grid-cols-2 lg:grid-cols-3 gap-[15px]">
-            <div class="border-b-[.8px]">
-              <div class="pb-[15px]">
-                <div class="border-r-[.8px]">
+          <div class="grid grid-cols-3 md:grid-cols-3 gap-[15px]">
+            <div class="">
+              <div class="">
+                <div class="border-r-[1.5px] border-gray-400">
                   <div class="px-[5px] lg:px-[15px] flex flex-col items-center justify-start">
                     <div class="w-[44px] h-[44px] flex items-center justify-center rounded-full bg-[#E40306]">
-                      <img src="./assets/icon/icon-5.svg" alt="" />
+                      <img src="./assets/icon/icon-5.svg" alt="about img" />
                     </div>
-                    <p class="text-[16px] text-center font-[500] leading-[17px]">
+                    <p class="text-[10px] md:text-sm text-center leading-tight mt-1">
                       הלקוח בראש סדר העדיפויות
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="border-b-[.8px]">
-              <div class="pb-[15px]">
-                <div class="border-r-[.8px]">
+            <div class="">
+              <div class="">
+                <div class="border-r-[1.5px] border-gray-400">
                   <div class="px-[5px] lg:px-[15px] flex flex-col items-center justify-start">
                     <div class="w-[44px] h-[44px] flex items-center justify-center rounded-full bg-[#E40306]">
-                      <img src="./assets/icon/icon-4.svg" alt="" />
+                      <img src="./assets/icon/icon-4.svg" alt="about img" />
                     </div>
-                    <p class="text-[16px] text-center font-[500] leading-[17px]">
+                    <p class="text-[10px] md:text-sm text-center leading-tight mt-1">
                       הלקוח בראש סדר העדיפויות
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="border-b-[.8px]">
-              <div class="pb-[15px]">
-                <div class="border-r-[.8px]">
+            <div class="">
+              <div class="">
+                <div class="">
                   <div class="px-[5px] lg:px-[15px] flex flex-col items-center justify-start">
                     <div class="w-[44px] h-[44px] flex items-center justify-center rounded-full bg-[#E40306]">
-                      <img src="./assets/icon/icon-6.svg" alt="" />
+                      <img src="./assets/icon/icon-6.svg" alt="about img" />
                     </div>
-                    <p class="text-[16px] text-center font-[500] leading-[17px]">
+                    <p class="text-[10px] md:text-sm text-center leading-tight mt-1">
                       הלקוח בראש סדר העדיפויות
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="border-b-[.8px]">
+          </div>
+          <div class="hidden lg:block w-full h-[1px] bg-gray-400 my-6"></div>
+          <div class="grid grid-cols-3 md:grid-cols-3 gap-[15px] mt-10 lg:mt-0">
+            <div class="">
               <div class="pb-[15px]">
-                <div class="border-r-[.8px]">
+                <div class="border-r-[1.5px] border-gray-400">
                   <div class="px-[5px] lg:px-[15px] flex flex-col items-center justify-start">
                     <div class="w-[44px] h-[44px] flex items-center justify-center rounded-full bg-[#E40306]">
-                      <img src="./assets/icon/icon-3.svg" alt="" />
+                      <img src="./assets/icon/icon-3.svg" alt="about img" />
                     </div>
-                    <p class="text-[16px] text-center font-[500] leading-[17px]">
+                    <p class=" text-[10px] sm:text-sm text-center leading-tight mt-1">
                       הלקוח בראש סדר העדיפויות
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="border-b-[.8px]">
+            <div class="">
               <div class="pb-[15px]">
-                <div class="border-r-[.8px]">
+                <div class="border-r-[1.5px] border-gray-400">
                   <div class="px-[5px] lg:px-[15px] flex flex-col items-center justify-start">
                     <div class="w-[44px] h-[44px] flex items-center justify-center rounded-full bg-[#E40306]">
-                      <img src="./assets/icon/icon-1.svg" alt="" />
+                      <img src="./assets/icon/icon-1.svg" alt="about img" />
                     </div>
-                    <p class="text-[16px] text-center font-[500] leading-[17px]">
+                    <p class=" text-[10px] sm:text-sm text-center leading-tight mt-1">
                       הלקוח בראש סדר העדיפויות
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="border-b-[.8px]">
+            <div class="">
               <div class="pb-[15px]">
-                <div class="border-r-[.8px]">
+                <div class="">
                   <div class="px-[5px] lg:px-[15px] flex flex-col items-center justify-start">
                     <div class="w-[44px] h-[44px] flex items-center justify-center rounded-full bg-[#E40306]">
-                      <img src="./assets/icon/icon-2.svg" alt="" />
+                      <img src="./assets/icon/icon-2.svg" alt="about img" />
                     </div>
-                    <p class="text-[16px] text-center font-[500] leading-[17px]">
+                    <p class=" text-[10px] sm:text-sm text-center leading-tight mt-1">
                       הלקוח בראש סדר העדיפויות
                     </p>
                   </div>
@@ -240,11 +262,11 @@
     </div>
   </section>
 
-  <section class="px-[20px] md:px-[50px] lg:px-[130px] py-[50px] md:py-[50px] lg:py-[70px] bg-white">
+  <section class="px-[20px] md:px-[50px] lg:px-[130px] py-[50px] md:py-[50px] lg:py-[70px] bg-white container mx-auto">
     <!-- title -->
     <div class="flex items-center w-full">
       <div class="w-[35%] h-[1.5px] bg-[#000000]"></div>
-      <div class="w-[30%] flex items-center justify-center">
+      <div class="w-full md:w-[30%] flex items-center justify-center">
         <h3 class="text-[16px] px-[5px] md:text-[17px] lg:text-[30px] inline-block text-[#000000]">
           הישגי המשרד
         </h3>
@@ -253,63 +275,43 @@
     </div>
 
     <div class="mt-[50px] lg:mt-[70px]">
-      <div class="grid lg:grid-cols-5 gap-[20px] md:gap-[30px] lg:gap-[40px]">
-        <div class="lg:col-span-2 lg:border-r-[.8px] border-[#000000]">
+      <div class="grid grid-cols-1 lg:grid-cols-5 gap-5 md:gap-8 lg:gap-10">
+        <div class="lg:col-span-2 lg:border-r-[1.5px] border-gray-400">
           <div class="lg:pr-[20px]">
             <div class="grid grid-cols-3 gap-[15px]">
               <div class="col-span-1">
-                <img src="./assets/certificate/1.jpg" alt="" class="w-full h-full" />
+                <img src="./assets/certificate/1.jpg" alt="about img" class="w-full h-full" />
               </div>
               <div class="col-span-2">
-                <img src="./assets/certificate/2.jpg" alt="" class="w-full h-full" />
+                <img src="./assets/certificate/2.jpg" alt="about img" class="w-full h-full" />
               </div>
             </div>
             <div class="grid grid-cols-3 gap-[15px] mt-[10px]">
               <div class="col-span-2">
-                <img src="./assets/certificate/2.jpg" alt="" class="w-full h-full" />
+                <img src="./assets/certificate/2.jpg" alt="about img" class="w-full h-full" />
               </div>
               <div class="col-span-1">
-                <img src="./assets/certificate/4.jpg" alt="" class="w-full h-full" />
+                <img src="./assets/certificate/4.jpg" alt="about img" class="w-full h-full" />
               </div>
             </div>
             <div class="grid grid-cols-3 gap-[15px] mt-[10px]">
               <div class="">
-                <img src="./assets/certificate/1.jpg" alt="" class="w-full h-full" />
+                <img src="./assets/certificate/1.jpg" alt="about img" class="w-full h-full" />
               </div>
               <div class="">
-                <img src="./assets/certificate/4.jpg" alt="" class="w-full h-full" />
+                <img src="./assets/certificate/4.jpg" alt="about img" class="w-full h-full" />
               </div>
               <div class="">
-                <img src="./assets/certificate/1.jpg" alt="" class="w-full h-full" />
+                <img src="./assets/certificate/1.jpg" alt="about img" class="w-full h-full" />
               </div>
             </div>
           </div>
         </div>
         <div class="lg:col-span-3">
-          <div class="border-b-[.8px]">
-            <div class="pb-[15px] text-right">
-              <div class="pl-[90px]">
-                <div class="flex items-start gap-[8px]">
-                  <div class="space-y-[5px] lg:space-y-[10px]">
-                    <h4 class="text-[16px] lg:text-[18px] font-bold text-right">
-                      איך לנצל הזדמנויות בשוק הנדל"ן
-                    </h4>
-                    <p class="text-[13px] lg:text-[15px] text-right font-[500] leading-[21px]">
-                      לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית צש
-                      בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק
-                    </p>
-                  </div>
-                  <div>
-                    <img src="./assets/about-us-1.jpg" alt="" class="w-full h-[155px]" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="border-b-[.8px] mt-[15px]">
-            <div class="pb-[15px] text-right">
-              <div class="pl-[90px]">
-                <div class="flex items-start gap-[8px]">
+          <div class="border-b-[1.5px] border-gray-400">
+            <div class="text-right">
+              <div class="pb-6">
+                <div class="flex items-start gap-[8px] flex-wrap-reverse sm:flex-nowrap">
                   <div class="space-y-[5px] lg:space-y-[10px]">
                     <h4 class="text-[16px] lg:text-[18px] font-bold text-right">
                       איך לנצל הזדמנויות בשוק הנדל"ן
@@ -319,12 +321,35 @@
                       בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק
                     </p>
                     <button class="">
-                      <img src="./assets/icon/pdf.svg" alt="" />
+                      <img src="./assets/icon/pdf.svg" alt="about img" />
+                    </button>
+                  </div>
+                  <div class=" w-full sm:w-[300px] sm:h-[175px]">
+                    <img src="./assets/about-us-1.jpg" alt="about img" class="w-full h-full" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-b-[1.5px] border-gray-400 mt-[15px]">
+            <div class="text-right">
+              <div class="pb-6 pt-3">
+                <div class="flex items-start gap-[8px] flex-wrap-reverse sm:flex-nowrap">
+                  <div class="space-y-[5px] lg:space-y-[10px]">
+                    <h4 class="text-[16px] lg:text-[18px] font-bold text-right">
+                      איך לנצל הזדמנויות בשוק הנדל"ן
+                    </h4>
+                    <p class="text-[13px] lg:text-[15px] text-right font-[500] leading-[21px]">
+                      לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית צש
+                      בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק
+                    </p>
+                    <button class="">
+                      <img src="./assets/icon/pdf.svg" alt="about img" />
                     </button>
                   </div>
 
-                  <div>
-                    <img src="./assets/about-us-1.jpg" alt="" class="w-full h-[155px]" />
+                  <div class=" w-full sm:w-[300px] sm:h-[175px]">
+                    <img src="./assets/about-us-1.jpg" alt="about img" class="w-full h-full" />
                   </div>
                 </div>
               </div>
@@ -332,8 +357,8 @@
           </div>
           <div class="mt-[15px]">
             <div class="text-right">
-              <div class="pl-[90px]">
-                <div class="flex items-start gap-[8px]">
+              <div class="pb-6 pt-3">
+                <div class="flex items-start gap-[8px] flex-wrap-reverse sm:flex-nowrap">
                   <div class="space-y-[5px] lg:space-y-[10px]">
                     <h4 class="text-[16px] lg:text-[18px] font-bold text-right">
                       איך לנצל הזדמנויות בשוק הנדל"ן
@@ -343,12 +368,12 @@
                       בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק
                     </p>
                     <button class="">
-                      <img src="./assets/icon/pdf.svg" alt="" />
+                      <img src="./assets/icon/pdf.svg" alt="about img" />
                     </button>
                   </div>
 
-                  <div>
-                    <img src="./assets/about-us-1.jpg" alt="" class="w-full h-[155px]" />
+                  <div class=" w-full sm:w-[300px] sm:h-[175px]">
+                    <img src="./assets/about-us-1.jpg" alt="about img" class="w-full h-full" />
                   </div>
                 </div>
               </div>
