@@ -935,67 +935,48 @@
     }
 
     //  dropdown select options
-    const options = document.getElementsByClassName("options");
-    const options2 = document.getElementsByClassName("options2");
-    const options3 = document.getElementsByClassName("options3");
-
-    const selectField = document.getElementById("selectField");
-    const selectText = document.getElementById("selectText");
-    const arrowIcon = document.getElementById("arrowIcon")
-    const list = document.getElementById("list")
-
-    const selectField2 = document.getElementById("selectField2");
-    const selectText2 = document.getElementById("selectText2");
-    const arrowIcon2 = document.getElementById("arrowIcon2")
-    const list2 = document.getElementById("list2")
-
-    const selectField3 = document.getElementById("selectField3");
-    const selectText3 = document.getElementById("selectText3");
-    const arrowIcon3 = document.getElementById("arrowIcon3")
-    const list3 = document.getElementById("list3")
-
-
-    selectField.onclick = function () {
-      list.classList.toggle("hide")
-      arrowIcon.classList.toggle("rotate")
-    }
-
-    selectField2.onclick = function () {
-      list2.classList.toggle("hide")
-      arrowIcon2.classList.toggle("rotate")
-    }
-
-    selectField3.onclick = function () {
-      list3.classList.toggle("hide")
-      arrowIcon3.classList.toggle("rotate")
-    }
-
-    for (option of options) {
-      option.onclick = function () {
-        selectText.innerHTML = this.textContent;
+    function setupDropdown(selectField, selectText, arrowIcon, list, options) {
+      selectField.onclick = function () {
         list.classList.toggle("hide");
-        arrowIcon.classList.toggle("rotate")
+        arrowIcon.classList.toggle("rotate");
+      };
 
+      for (option of options) {
+        option.onclick = function () {
+          selectText.innerHTML = this.textContent;
+          list.classList.toggle("hide");
+          arrowIcon.classList.toggle("rotate");
+        };
       }
     }
 
-    for (option of options2) {
-      option.onclick = function () {
-        selectText2.innerHTML = this.textContent;
-        list2.classList.toggle("hide");
-        arrowIcon2.classList.toggle("rotate")
-      }
-    }
+    const dropdown1 = {
+      selectField: document.getElementById("selectField"),
+      selectText: document.getElementById("selectText"),
+      arrowIcon: document.getElementById("arrowIcon"),
+      list: document.getElementById("list"),
+      options: document.getElementsByClassName("options"),
+    };
 
-    for (option of options3) {
-      option.onclick = function () {
-        selectText3.innerHTML = this.textContent;
-        list3.classList.toggle("hide");
-        arrowIcon3.classList.toggle("rotate")
-      }
-    }
+    const dropdown2 = {
+      selectField: document.getElementById("selectField2"),
+      selectText: document.getElementById("selectText2"),
+      arrowIcon: document.getElementById("arrowIcon2"),
+      list: document.getElementById("list2"),
+      options: document.getElementsByClassName("options2"),
+    };
 
+    const dropdown3 = {
+      selectField: document.getElementById("selectField3"),
+      selectText: document.getElementById("selectText3"),
+      arrowIcon: document.getElementById("arrowIcon3"),
+      list: document.getElementById("list3"),
+      options: document.getElementsByClassName("options3"),
+    };
 
+    setupDropdown(dropdown1.selectField, dropdown1.selectText, dropdown1.arrowIcon, dropdown1.list, dropdown1.options);
+    setupDropdown(dropdown2.selectField, dropdown2.selectText, dropdown2.arrowIcon, dropdown2.list, dropdown2.options);
+    setupDropdown(dropdown3.selectField, dropdown3.selectText, dropdown3.arrowIcon, dropdown3.list, dropdown3.options);
   </script>
 </body>
 
