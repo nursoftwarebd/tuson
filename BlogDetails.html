@@ -16,7 +16,7 @@
         integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
         crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Tuson Home</title>
+    <title>Tuson - Blog Details</title>
 
     <style>
         body {
@@ -32,193 +32,207 @@
         li:hover {
             color: #e40306;
         }
-        
-    #menu {
-      display: none;
-    }
+
+        #menu {
+            display: none;
+        }
+
+        p {
+            font-size: 17px !important;
+            line-height: 25px !important;
+        }
     </style>
 </head>
 
 <body class="relative">
     <div class="bg-[url('./assets/breadcrumb-bg.jpg')] w-full h-full md:h-[345px] bg-cover relative z-0">
-    <header class="block md:flex justify-center items-center w-[100%] mx-auto lg:pt-[20px] opacity-100 relative z-10">
-        <div class="hidden lg:flex items-center justify-center">
-            <button class="md:w-[110px] lg:w-[140px] h-[70px] text-white bg-[#E40306]">
-                <span class="md:text-[10px] lg:text-[16px] text-center block leading-tight">
-                    לפרטים נוספי
-                </span>
-                <span class="md:text-[10px] lg:text-[14px] 2xl:text-[18px] font-bold block leading-tight">
-                    077-997-9157
-                </span>
-            </button>
-        </div>
-    
-        <div class="bg-[#000000] text-white w-full lg:w-auto h-[70px] flex items-center justify-between lg:justify-start">
-            <nav class="hidden lg:block">
-                <ul class="md:px-[15px] lg:px-[70px] flex items-center justify-center md:gap-[10px] 2xl:gap-[35px]">
-                    <li>
-                        <div class="flex items-center md:gap-[2px] lg:gap-[10px]">
-                            <button class="flex items-center md:gap-[2px] lg:gap-[6px]">
-                                <img src="./assets/flag-1.png" alt="england" />
-                                <span class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] font-[500] block">EN</span>
-                            </button>
-                            <button class="flex items-center md:gap-[2px] lg:gap-[6px]">
-                                <img src="./assets/icon/eng.svg" alt="Arab" />
-                                <span class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] font-[500] block">צר</span>
-                            </button>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                            צור קשר
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                            בלוג
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                            פרויקטים חדשים
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                            נכסים להשכרה
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                            דירות למכירה
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                            קטלוג נכסים
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                            אודות
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                            בית
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="w-[62px] md:w-[90px] lg:w-[118px] h-[62px] flex items-center justify-center md:pr-[20px]">
-                <img src="./assets/logo.png" alt="logo" />
-            </button>
-            <div class="mr-3 block lg:hidden">
-                <button onclick="handleClick()" class="text-white">
-                    <svg width="36px" height="36px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path d="M4 6H20M4 12H20M4 18H20" stroke="#fff" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                            </path>
-                        </g>
-                    </svg>
+        <header
+            class="block md:flex justify-center items-center w-[100%] mx-auto lg:pt-[20px] opacity-100 fixed lg:relative top-0 left-0 z-10">
+            <div class="hidden lg:flex items-center justify-center">
+                <button class="md:w-[110px] lg:w-[140px] h-[70px] text-white bg-[#E40306]">
+                    <span class="md:text-[10px] lg:text-[16px] text-center block leading-tight">
+                        לפרטים נוספי
+                    </span>
+                    <span class="md:text-[10px] lg:text-[14px] 2xl:text-[18px] font-bold block leading-tight">
+                        077-997-9157
+                    </span>
                 </button>
             </div>
-        </div>
-        <div id="menu"
-            class="lg:!hidden w-[80%] sm:w-[50%] min-h-screen absolute top-0 right-0 pt-[70px] px-10 bg-black text-white !z-[999]">
-            <div class="absolute top-[15px] right-3">
-                <button onclick="handleClick()" class="text-white">
-                    <svg width="36px" height="36px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <g id="Menu / Close_MD">
-                                <path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#fff"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+
+            <div
+                class="bg-[#000000] text-white w-full lg:w-auto h-[70px] flex items-center justify-between lg:justify-start">
+                <nav class="hidden lg:block">
+                    <ul class="md:px-[15px] lg:px-[70px] flex items-center justify-center md:gap-[10px] 2xl:gap-[35px]">
+                        <li>
+                            <div class="flex items-center md:gap-[2px] lg:gap-[10px]">
+                                <button class="flex items-center md:gap-[2px] lg:gap-[6px]">
+                                    <img src="./assets/flag-1.png" alt="england" />
+                                    <span
+                                        class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] font-[500] block">EN</span>
+                                </button>
+                                <button class="flex items-center md:gap-[2px] lg:gap-[6px]">
+                                    <img src="./assets/icon/eng.svg" alt="Arab" />
+                                    <span
+                                        class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] font-[500] block">צר</span>
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./contact.html"
+                                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                                צור קשר
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./blog.html"
+                                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                                בלוג
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./products2.html"
+                                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                                פרויקטים חדשים
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./products.html"
+                                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                                נכסים להשכרה
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./home.html"
+                                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                                דירות למכירה
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/products2.html"
+                                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                                קטלוג נכסים
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./about.html"
+                                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                                אודות
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./home.html"
+                                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] border-b-2 hover:border-b-2 border-[#E40306] focus:border-b-2">
+                                בית
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button
+                    class="w-[62px] md:w-[90px] lg:w-[118px] h-[62px] flex items-center justify-center md:pr-[20px]">
+                    <img src="./assets/logo.png" alt="logo" />
+                </button>
+                <div class="mr-3 block lg:hidden">
+                    <button onclick="handleClick()" class="text-white">
+                        <svg width="36px" height="36px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="M4 6H20M4 12H20M4 18H20" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                </path>
                             </g>
-                        </g>
-                    </svg>
-                </button>
+                        </svg>
+                    </button>
+                </div>
             </div>
-            <div class="text-white mt-5">
-                <ul class="space-y-4">
-                    <li>
-                        <a href="#"
-                            class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                            בית
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                            אודות
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                            קטלוג נכסים
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                            דירות למכירה
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                            נכסים להשכרה
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                            פרויקטים חדשים
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                            בלוג
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="#"
-                            class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                            צור קשר
-                        </a>
-                    </li>
-    
-                    <li>
-                        <div class="flex items-center gap-[10px]">
-                            <button class="flex items-center gap-[6px]">
-                                <img src="./assets/flag-1.png" alt="england" />
-                                <span class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] font-[500] block">EN</span>
-                            </button>
-                            <button class="flex items-center gap-[6px]">
-                                <img src="./assets/icon/eng.svg" alt="Arab" />
-                                <span class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] font-[500] block">צר</span>
-                            </button>
-                        </div>
-                    </li>
-                </ul>
+            <div id="menu"
+                class="lg:!hidden w-[80%] sm:w-[50%] min-h-screen fixed top-0 right-0 pt-[70px] px-10 bg-black text-white !z-[999]">
+                <div class="absolute top-[15px] right-3">
+                    <button onclick="handleClick()" class="text-white">
+                        <svg width="36px" height="36px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g id="Menu / Close_MD">
+                                    <path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#fff"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+                <div class="text-white mt-5">
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="./home.html"
+                                class="md:text-[12px] lg:text-[14px] 2xl:text-[21px] leading-[25px] border-b-2 hover:border-b-2 border-[#E40306] focus:border-b-2">
+                                בית
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./about.html"
+                                class="md:text-[12px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                                אודות
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./products.html"
+                                class="md:text-[12px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                                קטלוג נכסים
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./products2.html"
+                                class="md:text-[12px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                                דירות למכירה
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./productDetails.html"
+                                class="md:text-[12px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                                נכסים להשכרה
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./blogDetails.html"
+                                class="md:text-[12px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                                פרויקטים חדשים
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./blog.html"
+                                class="md:text-[12px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                                בלוג
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./contact.html"
+                                class="md:text-[12px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                                צור קשר
+                            </a>
+                        </li>
+
+                        <li>
+                            <div class="flex items-center gap-[10px]">
+                                <button class="flex items-center gap-[6px]">
+                                    <img src="./assets/flag-1.png" alt="england" />
+                                    <span
+                                        class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] font-[500] block">EN</span>
+                                </button>
+                                <button class="flex items-center gap-[6px]">
+                                    <img src="./assets/icon/eng.svg" alt="Arab" />
+                                    <span
+                                        class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] font-[500] block">צר</span>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
         <!-- breadcrumb details -->
         <section>
@@ -238,10 +252,7 @@
     </div>
 
     <!-- blog details section -->
-    <section
-        class="px-[20px] md:px-[50px] lg:px-[130px] pt-[50px] md:py-[50px] lg:py-[70px] bg-white container mx-auto">
-
-
+    <section class="px-[20px] pt-[120px] md:py-[50px] lg:py-[70px] bg-white container mx-auto">
         <div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-[34px] items-center">
                 <div>
@@ -317,7 +328,7 @@
         </div>
 
         <div class="mt-[50px]">
-            <div class="flex items-center w-full mb-12">
+            <div class="flex items-center w-full mb-12  pr-[30px]">
                 <div class="w-[35%] h-[1.5px]  border-gray-400 bg-[#000000]"></div>
                 <div class="w-full md:w-[30%] flex items-center justify-center">
                     <h3 class="text-[16px] px-[5px] md:px-0 md:text-[30px] inline-block text-[#000000]">
@@ -371,7 +382,7 @@
     </section>
 
     <footer class="bg-[#000000] text-white">
-        <div class="px-[20px] md:px-[50px] lg:px-[130px] py-[50px] md:py-[50px] lg:py-[70px]  container mx-auto">
+        <div class="px-[20px] py-[50px] md:py-[50px] lg:py-[70px]  container mx-auto">
             <div class="grid md:grid-cols-2 lg:grid-cols-4 md:gap-[40px] lg:gap-[80px]">
                 <div>
                     <h4 class="text-[26px] text-center font-bold leading-[20px]">
@@ -491,12 +502,7 @@
         </div>
     </div>
 
-    <script>
-        const menuBar = document.getElementById("menu");
-        const handleClick = () => {
-            menuBar.style.display = (menuBar.style.display === "none" || menuBar.style.display === "") ? "block" : "none";
-        }
-    </script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
