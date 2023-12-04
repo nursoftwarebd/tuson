@@ -44,9 +44,9 @@
 </head>
 
 <body class="relative">
-  <div class="bg-[url('./assets/breadcrumb-bg.jpg')] w-full h-full md:h-[345px] bg-cover relative z-0">
+  <div class="bg-[url('./assets/breadcrumb-bg.jpg')] w-full h-full md:h-[245px] lg:h-[345px] bg-cover relative z-0">
     <header
-      class="block md:flex justify-center items-center w-[100%] mx-auto lg:pt-[20px] opacity-100 fixed lg:relative top-0 left-0 z-10">
+      class="block md:flex justify-center items-center w-full mx-auto lg:pt-[20px] opacity-100 fixed lg:relative top-0 left-0 z-10">
       <div class="hidden lg:flex items-center justify-center">
         <button class="md:w-[110px] lg:w-[140px] h-[70px] text-white bg-[#E40306]">
           <span class="md:text-[10px] lg:text-[16px] text-center block leading-tight">
@@ -226,16 +226,17 @@
     </header>
 
     <!-- breadcrumb -->
-    <section>
-      <div
-        class="w-full h-full hidden md:flex flex-col justify-center items-center bg-white/50 absolute top-0 left-0 z-2">
-        <h2 class="text-black font-semibold text-[40px]">אודות</h2>
-      </div>
-      <div class="container text-end relative hidden md:block">
-        <div class="text-black flex items-center justify-end space-x-2 mt-5 md:mt-52 text-lg mr-0">
-          <li>אודות</li>
-          <span> > </span>
-          <li>בית</li>
+    <section class="w-full h-full bg-white/60 lg:absolute top-0 left-0 z-2">
+      <div class="container mx-auto">
+        <div class="text-center pt-20 lg:pt-0 lg:mt-44">
+          <h2 class="text-black font-semibold text-[40px]">אודות</h2>
+        </div>
+        <div class="text-end py-2 pr-5 md:mt-16">
+          <div class="flex items-center gap-2 justify-end text-[17px]">
+            <li><a href="./about.html">אודות</a></li>
+            <span> > </span>
+            <li><a href="./home.html">בית</a></li>
+          </div>
         </div>
       </div>
     </section>

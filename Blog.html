@@ -42,11 +42,17 @@
       font-size: 17px !important;
       line-height: 25px !important;
     }
+
+    h4 {
+      font-size: 20px !important;
+      line-height: 27px !important;
+      margin-bottom: 5px;
+    }
   </style>
 </head>
 
 <body class="relative">
-  <div class="bg-[url('./assets/breadcrumb-bg.jpg')] w-full h-full md:h-[345px] bg-cover relative lg:z-0">
+  <div class="bg-[url('./assets/breadcrumb-bg.jpg')] w-full h-full md:h-[245px] lg:h-[345px] bg-cover relative lg:z-0">
     <header
       class="block md:flex justify-center items-center w-[100%] mx-auto lg:pt-[20px] opacity-100 fixed lg:relative top-0 left-0 z-10">
       <div class="hidden lg:flex items-center justify-center">
@@ -228,18 +234,17 @@
     </header>
 
     <!-- breadcrumb details -->
-    <section>
-      <div
-        class="w-full h-full hidden md:flex flex-col justify-center items-center bg-white/50 absolute top-0 left-0 z-2">
-        <h2 class="text-black font-semibold text-3xl">בלוג</h2>
-      </div>
-      <div class="container text-end relative hidden md:block">
-        <div class="text-black flex items-center justify-end space-x-2 mt-5 md:mt-52 text-lg mr-10">
-          <li>בלוג</li>
-          <span> > </span>
-          <li>קטלוג נכסים</li>
-          <span> > </span>
-          <li>בית</li>
+    <section class="w-full h-full bg-white/60 lg:absolute top-0 left-0 z-2">
+      <div class="container mx-auto">
+        <div class="text-center pt-20 lg:pt-0 lg:mt-44">
+          <h2 class="text-black font-semibold text-[40px]">בלוג</h2>
+        </div>
+        <div class="text-end py-2 pr-5 md:mt-16">
+          <div class="flex items-center gap-2 justify-end text-[17px]">
+            <li><a href="./blog.html">בלוג</a></li>
+            <span> > </span>
+            <li><a href="./home.html">בית</a></li>
+          </div>
         </div>
       </div>
     </section>
@@ -250,10 +255,10 @@
     <div class="mt-[50px]">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[24px] mb-10 lg:mb-0">
         <div class="relative cursor-pointer">
-          <div class="md:mr-[24px] border-b-[1.5px] border-gray-400 pb-5">
+          <div class="sm:mr-[24px] border-b-[1.5px] border-gray-400 pb-5">
             <img src="./assets/blog/blog-1.jpg" alt="blog" class="w-full h-full" />
             <div class="mt-[18px]">
-              <h4 class="text-[16px] font-medium text-right text-[#000000]">
+              <h4 class="text-[16px] font-bold text-right text-[#000000]">
                 איך לנצל הזדמנויות בשוק הנדל"ן
               </h4>
               <p class="mt-[5px] text-[15px] text-right leading-[22px]">
@@ -261,14 +266,14 @@
               </p>
             </div>
           </div>
-          <div class="hidden lg:block w-full h-[92%] absolute top-0 left-0 lg:z-0 border-r-[1.5px] border-gray-400">
+          <div class="hidden sm:block w-full h-[92%] absolute top-0 left-0 lg:z-0 border-r-[1.5px] border-gray-400">
           </div>
         </div>
         <div class="relative cursor-pointer">
-          <div class="md:mr-[24px] border-b-[1.5px] border-gray-400 pb-5">
+          <div class="sm:mr-[24px] border-b-[1.5px] border-gray-400 pb-5">
             <img src="./assets/blog/blog-2.jpg" alt="blog" class="w-full h-full" />
             <div class="mt-[18px]">
-              <h4 class="text-[16px] font-medium text-right text-[#000000]">
+              <h4 class="text-[16px] font-bold text-right text-[#000000]">
                 איך לנצל הזדמנויות בשוק הנדל"ן
               </h4>
               <p class="mt-[5px] text-[15px] text-right leading-[22px]">
@@ -276,14 +281,14 @@
               </p>
             </div>
           </div>
-          <div class="hidden lg:block w-full h-[92%] absolute top-0 left-0 lg:z-0 border-r-[1.5px] border-gray-400">
+          <div class="hidden md:block w-full h-[92%] absolute top-0 left-0 lg:z-0 border-r-[1.5px] border-gray-400">
           </div>
         </div>
-        <div class="cursor-pointer">
-          <div class="md:mr-[24px] border-b-[1.5px] border-gray-400 pb-5">
+        <div class="cursor-pointer relative">
+          <div class="sm:mr-[24px] border-b-[1.5px] border-gray-400 pb-5">
             <img src="./assets/blog/blog-3.jpg" alt="blog" class="w-full h-full" />
             <div class="mt-[18px]">
-              <h4 class="text-[16px] font-medium text-right text-[#000000]">
+              <h4 class="text-[16px] font-bold text-right text-[#000000]">
                 איך לנצל הזדמנויות בשוק הנדל"ן
               </h4>
               <p class="mt-[5px] text-[15px] text-right leading-[22px]">
@@ -291,12 +296,15 @@
               </p>
             </div>
           </div>
+          <div
+            class="hidden sm:block md:hidden w-full h-[92%] absolute top-0 left-0 lg:z-0 border-r-[1.5px] border-gray-400">
+          </div>
         </div>
         <div class="relative cursor-pointer">
-          <div class="md:mr-[24px] border-b-[1.5px] border-gray-400 pb-5">
+          <div class="sm:mr-[24px] border-b-[1.5px] border-gray-400 pb-5">
             <img src="./assets/blog/blog-4.jpg" alt="blog" class="w-full h-full" />
             <div class="mt-[18px]">
-              <h4 class="text-[16px] font-medium text-right text-[#000000]">
+              <h4 class="text-[16px] font-bold text-right text-[#000000]">
                 איך לנצל הזדמנויות בשוק הנדל"ן
               </h4>
               <p class="mt-[5px] text-[15px] text-right leading-[22px]">
@@ -304,14 +312,14 @@
               </p>
             </div>
           </div>
-          <div class="hidden lg:block w-full h-[92%] absolute top-0 left-0 lg:z-0 border-r-[1.5px] border-gray-400">
+          <div class="hidden md:block w-full h-[92%] absolute top-0 left-0 lg:z-0 border-r-[1.5px] border-gray-400">
           </div>
         </div>
         <div class="relative cursor-pointer">
-          <div class="md:mr-[24px] border-b-[1.5px] border-gray-400 pb-5">
+          <div class="sm:mr-[24px] border-b-[1.5px] border-gray-400 pb-5">
             <img src="./assets/blog/blog-1.jpg" alt="blog" class="w-full h-full" />
             <div class="mt-[18px]">
-              <h4 class="text-[16px] font-medium text-right text-[#000000]">
+              <h4 class="text-[16px] font-bold text-right text-[#000000]">
                 איך לנצל הזדמנויות בשוק הנדל"ן
               </h4>
               <p class="mt-[5px] text-[15px] text-right leading-[22px]">
@@ -319,14 +327,14 @@
               </p>
             </div>
           </div>
-          <div class="hidden lg:block w-full h-[92%] absolute top-0 left-0 lg:z-0 border-r-[1.5px] border-gray-400">
+          <div class="hidden sm:block w-full h-[92%] absolute top-0 left-0 lg:z-0 border-r-[1.5px] border-gray-400">
           </div>
         </div>
         <div class="cursor-pointer">
-          <div class="md:mr-[24px] border-b-[1.5px] border-gray-400 pb-5">
+          <div class="sm:mr-[24px] border-b-[1.5px] border-gray-400 pb-5">
             <img src="./assets/blog/blog-2.jpg" alt="blog" class="w-full h-full" />
             <div class="mt-[18px]">
-              <h4 class="text-[16px] font-medium text-right text-[#000000]">
+              <h4 class="text-[16px] font-bold text-right text-[#000000]">
                 איך לנצל הזדמנויות בשוק הנדל"ן
               </h4>
               <p class="mt-[5px] text-[15px] text-right leading-[22px]">
@@ -336,10 +344,10 @@
           </div>
         </div>
         <div class="relative cursor-pointer">
-          <div class="md:mr-[24px] border-b-[1.5px] border-gray-400 pb-5">
+          <div class="sm:mr-[24px] border-b-[1.5px] border-gray-400 pb-5">
             <img src="./assets/blog/blog-1.jpg" alt="blog" class="w-full h-full" />
             <div class="mt-[18px]">
-              <h4 class="text-[16px] font-medium text-right text-[#000000]">
+              <h4 class="text-[16px] font-bold text-right text-[#000000]">
                 איך לנצל הזדמנויות בשוק הנדל"ן
               </h4>
               <p class="mt-[5px] text-[15px] text-right leading-[22px]">
@@ -347,14 +355,14 @@
               </p>
             </div>
           </div>
-          <div class="hidden lg:block w-full h-[92%] absolute top-0 left-0 lg:z-0 border-r-[1.5px] border-gray-400">
+          <div class="hidden sm:block w-full h-[92%] absolute top-0 left-0 lg:z-0 border-r-[1.5px] border-gray-400">
           </div>
         </div>
         <div class="relative cursor-pointer">
-          <div class="md:mr-[24px] border-b-[1.5px] border-gray-400 pb-5">
+          <div class="sm:mr-[24px] border-b-[1.5px] border-gray-400 pb-5">
             <img src="./assets/blog/blog-2.jpg" alt="blog" class="w-full h-full" />
             <div class="mt-[18px]">
-              <h4 class="text-[16px] font-medium text-right text-[#000000]">
+              <h4 class="text-[16px] font-bold text-right text-[#000000]">
                 איך לנצל הזדמנויות בשוק הנדל"ן
               </h4>
               <p class="mt-[5px] text-[15px] text-right leading-[22px]">
@@ -362,14 +370,14 @@
               </p>
             </div>
           </div>
-          <div class="hidden lg:block w-full h-[92%] absolute top-0 left-0 lg:z-0 border-r-[1.5px] border-gray-400">
+          <div class="hidden md:block w-full h-[92%] absolute top-0 left-0 lg:z-0 border-r-[1.5px] border-gray-400">
           </div>
         </div>
-        <div class="cursor-pointer">
-          <div class="md:mr-[24px] border-b-[1.5px] border-gray-400 pb-5">
+        <div class="cursor-pointer relative">
+          <div class="sm:mr-[24px] border-b-[1.5px] border-gray-400 pb-5">
             <img src="./assets/blog/blog-3.jpg" alt="blog" class="w-full h-full" />
             <div class="mt-[18px]">
-              <h4 class="text-[16px] font-medium text-right text-[#000000]">
+              <h4 class="text-[16px] font-bold text-right text-[#000000]">
                 איך לנצל הזדמנויות בשוק הנדל"ן
               </h4>
               <p class="mt-[5px] text-[15px] text-right leading-[22px]">
@@ -377,12 +385,15 @@
               </p>
             </div>
           </div>
+          <div
+            class="hidden sm:block md:hidden w-full h-[92%] absolute top-0 left-0 lg:z-0 border-r-[1.5px] border-gray-400">
+          </div>
         </div>
         <div class="relative cursor-pointer">
-          <div class="md:mr-[24px] pb-5">
+          <div class="sm:mr-[24px] pb-5 border-b-0 sm:border-b-[1.5px] md:border-b-0 border-gray-400">
             <img src="./assets/blog/blog-4.jpg" alt="blog" class="w-full h-full" />
             <div class="mt-[18px]">
-              <h4 class="text-[16px] font-medium text-right text-[#000000]">
+              <h4 class="text-[16px] font-bold text-right text-[#000000]">
                 איך לנצל הזדמנויות בשוק הנדל"ן
               </h4>
               <p class="mt-[5px] text-[15px] text-right leading-[22px]">
@@ -390,14 +401,14 @@
               </p>
             </div>
           </div>
-          <div class="hidden lg:block w-full h-[92%] absolute top-0 left-0 lg:z-0 border-r-[1.5px] border-gray-400">
+          <div class="hidden md:block w-full h-[92%] absolute top-0 left-0 lg:z-0 border-r-[1.5px] border-gray-400">
           </div>
         </div>
         <div class="relative cursor-pointer">
-          <div class="md:mr-[24px] pb-5">
+          <div class="sm:mr-[24px] pb-5">
             <img src="./assets/blog/blog-1.jpg" alt="blog" class="w-full h-full" />
             <div class="mt-[18px]">
-              <h4 class="text-[16px] font-medium text-right text-[#000000]">
+              <h4 class="text-[16px] font-bold text-right text-[#000000]">
                 איך לנצל הזדמנויות בשוק הנדל"ן
               </h4>
               <p class="mt-[5px] text-[15px] text-right leading-[22px]">
@@ -405,14 +416,14 @@
               </p>
             </div>
           </div>
-          <div class="hidden lg:block w-full h-[92%] absolute top-0 left-0 lg:z-0 border-r-[1.5px] border-gray-400">
+          <div class="hidden sm:block w-full h-[92%] absolute top-0 left-0 lg:z-0 border-r-[1.5px] border-gray-400">
           </div>
         </div>
         <div class="cursor-pointer">
-          <div class="md:mr-[24px] pb-5">
+          <div class="sm:mr-[24px] pb-5">
             <img src="./assets/blog/blog-2.jpg" alt="blog" class="w-full h-full" />
             <div class="mt-[18px]">
-              <h4 class="text-[16px] font-medium text-right text-[#000000]">
+              <h4 class="text-[16px] font-bold text-right text-[#000000]">
                 איך לנצל הזדמנויות בשוק הנדל"ן
               </h4>
               <p class="mt-[5px] text-[15px] text-right leading-[22px]">
