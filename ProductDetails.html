@@ -31,6 +31,10 @@
       font-family: "Noto Sans Hebrew", sans-serif;
     }
 
+    p {
+      font-size: 17px !important;
+      line-height: 25px !important;
+    }
 
     li {
       list-style-type: none;
@@ -104,7 +108,7 @@
 
 <body class="relative">
   <div
-    class="bg-[url('./assets/details/details-header-bg.jpg')] bg-cover w-full h-[260px] md:h-[400px] lg:h-[550px] bg-opacity-75 bg-cover relative">
+    class="bg-[url('./assets/details/details-header-bg.jpg')] bg-cover w-full h-[250px] md:h-[400px] lg:h-[550px] bg-opacity-75 bg-cover relative">
     <header
       class="block md:flex justify-center items-center w-[100%] mx-auto lg:pt-[20px] opacity-100 fixed lg:relative top-0 left-0 z-10">
       <div class="hidden lg:flex items-center justify-center">
@@ -286,101 +290,103 @@
     </header>
 
     <!-- breadcrumb details -->
-    <section>
-      <div
-        class="w-full h-[250px] flex flex-col justify-center items-center bg-white/30 md:bg-white/50 absolute top-0 left-0 z-2">
-        <h2 class="text-black font-semibold text-3xl">קטלוג נכסים</h2>
-      </div>
-      <div class="container text-end relative hidden md:block  md:mx-auto md:pr-44">
-        <div class="text-black flex items-center justify-end space-x-2 mt-5 md:mt-32 text-lg mr-0">
-          <li>קטלוג נכסים</li>
-          <span> > </span>
-          <li>בית</li>
+    <section class="w-full h-[250px] bg-white/60 lg:absolute top-0 left-0 z-2">
+      <div class="container mx-auto">
+        <div class="text-center pt-20 lg:pt-0 lg:mt-32">
+          <h2 class="text-black font-semibold text-[40px]"> רמז דוד 6 < /h2>
+        </div>
+        <div class="text-end py-2 pr-5 md:mt-3">
+          <div class="flex items-center gap-2 justify-end text-[17px]">
+            <li><a href="./productDetails.html">דירות למכירה</a>
+            </li>
+            <span> > </span>
+            <li><a href="./home.html">בית</a></li>
+          </div>
         </div>
       </div>
     </section>
   </div>
 
-  <section class="px-[20px] md:px-[50px] lg:px-[130px] pt-[50px] md:pt-[50px] lg:pt-[70px] bg-white container mx-auto">
+  <section class="px-[20px] pt-[50px] md:pt-[50px] lg:pt-[70px] bg-white container mx-auto">
     <!-- product details -->
     <div class="grid grid-cols-1 lg:grid-cols-5 gap-[30px]">
       <div class="lg:col-span-2">
         <div class="slider-for">
           <div>
-            <img src="./assets/blog/blog-1.jpg" alt="img" style="width: 100%" />
+            <img src="./assets/details/1.jpg" alt="img" style="width: 100%" />
           </div>
           <div>
-            <img src="./assets/blog/blog-2.jpg" alt="img" style="width: 100%" />
+            <img src="./assets/details/1.jpg" alt="img" style="width: 100%" />
           </div>
           <div>
-            <img src="./assets/blog/blog-3.jpg" alt="img" style="width: 100%" />
+            <img src="./assets/details/1.jpg" alt="img" style="width: 100%" />
           </div>
           <div>
-            <img src="./assets/blog/blog-4.jpg" alt="img" style="width: 100%" />
+            <img src="./assets/details/1.jpg" alt="img" style="width: 100%" />
           </div>
         </div>
         <div class="slider-nav">
           <div>
-            <img src="./assets/blog/blog-1.jpg" alt="img" style="width: 100%" />
+            <img src="./assets/details/2.jpg" alt="img" style="width: 100%" />
           </div>
           <div>
-            <img src="./assets/blog/blog-2.jpg" alt="img" style="width: 100%" />
+            <img src="./assets/details/2.jpg" alt="img" style="width: 100%" />
           </div>
           <div>
-            <img src="./assets/blog/blog-3.jpg" alt="img" style="width: 100%" />
+            <img src="./assets/details/2.jpg" alt="img" style="width: 100%" />
           </div>
           <div>
-            <img src="./assets/blog/blog-4.jpg" alt="img" style="width: 100%" />
+            <img src="./assets/details/2.jpg" alt="img" style="width: 100%" />
           </div>
         </div>
       </div>
       <div class="lg:col-span-3 text-right text-[#000000] space-y-[20px]">
-        <h3 class="text-[22px]">פרטי הנכס</h3>
+        <h3 class="text-[28px] font-bold">פרטי הנכס</h3>
 
         <div class="flex items-start justify-end divide-x-[.8px] divide-[#000000]">
           <div class="pl-[45px] pr-[15px]">
-            <p class="text-[14px] text-right">שטח בנוי</p>
+            <p class="text-[15px] text-right">שטח בנוי</p>
             <div class="flex items-center gap-[4px] mt-[8px]">
-              <p class="font-[500] text-[16px]">מ"ר</p>
-              <p class="font-[500] text-[16px]">140</p>
+              <p class="font-[500]">מ"ר</p>
+              <p class="font-[500]">140</p>
             </div>
           </div>
           <div class="pl-[45px] pr-[15px]">
-            <p class="text-[14px] text-right">שטח מגרש</p>
+            <p class="text-[15px] text-right">שטח מגרש</p>
             <div class="flex items-center gap-[4px] mt-[8px]">
-              <p class="font-[500] text-[16px]">מ"ר</p>
-              <p class="font-[500] text-[16px]">250</p>
+              <p class="font-[500]">מ"ר</p>
+              <p class="font-[500]">250</p>
             </div>
           </div>
           <div class="pl-[45px] pr-[15px]">
-            <p class="text-[14px] text-right">קומה</p>
+            <p class="text-[15px] text-right">קומה</p>
             <div class="flex items-center gap-[4px] mt-[8px]">
-              <p class="font-[500] text-[16px]">4קומה</p>
+              <p class="font-[500]">4קומה</p>
             </div>
           </div>
           <div class="pl-[45px] pr-[15px]">
-            <p class="text-[14px] text-right">סוג נכס</p>
+            <p class="text-[15px] text-right">סוג נכס</p>
             <div class="flex items-center gap-[4px] mt-[8px]">
-              <p class="font-[500] text-[16px]">דירה</p>
+              <p class="font-[500]">דירה</p>
             </div>
           </div>
           <div class="pl-[45px]">
-            <p class="text-[14px] text-right">מיקום הנכס</p>
+            <p class="text-[15px] text-right">מיקום הנכס</p>
             <div class="flex items-center gap-[4px] mt-[8px]">
-              <p class="font-[500] text-[16px]">תל אביב-יפו</p>
+              <p class="font-[500]">תל אביב-יפו</p>
             </div>
           </div>
         </div>
         <div class="flex items-center justify-between pl-[110px]">
-          <button class="bg-[#E40306] text-white h-[40px] w-[200px] flex items-center justify-center">
+          <button class="bg-[#E40306] text-white h-[40px] w-[200px] flex items-center justify-center text-[17px]">
             6 רמז דוד <span>כתובת הנכס</span>
           </button>
-          <p class="text-[17px] font-[500]">תאריך כניסה: מיידית</p>
-          <p class="text-[17px] font-[500]">ארנונה: לא צוין</p>
+          <p class="font-[500]">תאריך כניסה: מיידית</p>
+          <p class="font-[500]">ארנונה: לא צוין</p>
         </div>
         <div>
-          <h4 class="text-[20px]">תיאור הנכס</h4>
-          <p class="mt-[8px] text-[15px] font-[500] leading-[25px] text-right">
+          <h4 class="text-[21px] font-bold mb-3">תיאור הנכס</h4>
+          <p class="mt-[8px] text-[17px] font-[500] leading-[25px] text-right">
             ורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית צש בליא, מנסוטו
             צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק. נולום ארווס סאפיאן -
             פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ
@@ -388,15 +394,14 @@
             למטכין נשואי מנורךגולר מונפרר סוברט לורם שבצק יהול במר מודוף
             אודיפו לאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף להאמית
             קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורךגולר מונפרר סוברט לורם
-            שבצק יהול לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית צש
+            שבצק יהול לורם איפסום דולור סיט אמט, <br> קונסקטורר אדיפיסינג אלית צש
             בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק. נולום
             ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו
             בלאסטיק מונופץ קליר, בנפת נפקט למסון
           </p>
         </div>
         <div class="flex items-center justify-end">
-          <button
-            class="w-[300px] h-[70px] flex items-center justify-center bg-[#888888] text-white text-[25px] font-[500]">
+          <button class="py-3 px-8 flex items-center justify-center bg-[#888888] text-white text-[32px] font-[500]">
             ₪ 13,900,000 <span class="ml-[18px]">מחיר:</span>
           </button>
         </div>
@@ -404,7 +409,7 @@
     </div>
   </section>
 
-  <section class="px-[20px] md:px-[50px] lg:px-[130px] pt-[50px] md:pt-[50px] lg:pt-[70px] bg-white container mx-auto">
+  <section class="px-[20px] pt-[50px] md:pt-[50px] lg:pt-[70px] bg-white container mx-auto">
     <div class="">
       <h3 class="text-[25px] font-bold text-right pb-[10px]">מפרט הנכס</h3>
       <div class="grid grid-cols-3 lg:grid-cols-4">
@@ -541,7 +546,7 @@
     </div>
   </section>
 
-  <section class="px-[20px] md:px-[50px] lg:px-[130px] pt-[50px] md:pt-[50px] lg:py-[70px] bg-white container mx-auto">
+  <section class="px-[20px] pt-[50px] md:pt-[50px] lg:py-[70px] bg-white container mx-auto">
     <!-- title -->
     <div class="flex items-center w-full">
       <div class="w-[38%] h-[1.5px] bg-[#000000]"></div>
@@ -613,7 +618,7 @@
   </section>
 
   <footer class="bg-[#000000] text-white">
-    <div class="px-[20px] md:px-[50px] lg:px-[130px] py-[50px] md:py-[50px] lg:py-[70px]  container mx-auto">
+    <div class="px-[20px] py-[50px] md:py-[50px] lg:py-[70px]  container mx-auto">
       <div class="grid md:grid-cols-2 lg:grid-cols-4 md:gap-[40px] lg:gap-[80px]">
         <div>
           <h4 class="text-[26px] text-center font-bold leading-[20px]">
