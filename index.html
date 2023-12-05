@@ -16,86 +16,193 @@
     integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
     crossorigin="anonymous"></script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./css/style.css">
   <title>Tuson - Home</title>
+
+  <style>
+    body {
+      font-family: "Noto Sans Hebrew", sans-serif;
+    }
+
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    p {
+      font-size: 17px !important;
+      line-height: 25px !important;
+    }
+
+    #menu {
+      display: none;
+    }
+
+    .selector {
+      cursor: pointer;
+    }
+
+    #selectField,
+    #selectField2,
+    #selectField3 {
+      width: 100%;
+      padding: 19px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* margin-bottom: 30px; */
+    }
+
+    #selectField img,
+    #selectField2 img,
+    #selectField3 img {
+      transition: transform 0.5s;
+    }
+
+    #list,
+    #list2,
+    #list3 {
+      width: 100%;
+      background: white;
+      text-align: right;
+      overflow: hidden;
+    }
+
+    .options,
+    .options2,
+    .options3 {
+      padding: 5px 20px;
+      box-sizing: border-box;
+      list-style: none;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .options:hover,
+    .options2:hover,
+    .options3:hover {
+      background: #e40306;
+      color: white;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .rotate {
+      transform: rotate(180deg);
+    }
+
+    @media only screen and (max-width: 468px) {
+
+      #selectField,
+      #selectField2,
+      #selectField3 {
+        padding: 15px 10px;
+      }
+    }
+  </style>
 </head>
 
 <body class="relative">
   <div class="bg-[url('./assets/banner.jpg')] w-full h-[500px] lg:h-screen bg-cover relative">
     <!-- header part -->
     <header
-      class="block md:flex justify-center items-center w-[100%] mx-auto lg:pt-[20px] opacity-100 fixed lg:relative top-0 left-0 z-10">
-      <div class="hidden lg:flex items-center justify-center">
-        <button class="md:w-[110px] lg:w-[140px] h-[70px] text-white bg-[#E40306]">
-          <span class="md:text-[10px] lg:text-[16px] text-center block leading-tight"> לפרטים נוספי </span>
-          <span class="md:text-[10px] lg:text-[14px] 2xl:text-[18px] font-bold block leading-tight"> 077-997-9157
+      class="w-full lg:w-[97%] mx-auto lg:h-[116px] h-[70px] text-white bg-black fixed lg:relative top-0 left-0 lg:top-3 z-10">
+      <div class="flex items-center justify-between h-full gap-3">
+        <a href="#"
+          class="hidden lg:flex flex-col justify-center items-center w-[217px] h-full text-white bg-[#E40306]">
+          <span class="md:text-[12px] lg:text-[16px] font-semibold text-center block">
+            לפרטים נוספי
           </span>
-        </button>
-      </div>
 
-      <div class="bg-[#000000] text-white w-full lg:w-auto h-[70px] flex items-center justify-between lg:justify-start">
-        <nav class="hidden lg:block">
-          <ul class="md:px-[15px] lg:px-[70px] flex items-center justify-center md:gap-[10px] 2xl:gap-[35px]">
-            <div>
-              <div class="flex items-center md:gap-[2px] lg:gap-[10px]">
+          <span class="md:text-[14px] lg:text-[20px] 2xl:text-[26px] font-bold block">
+            077-997-9157
+          </span>
+        </a>
+
+        <div class="hidden lg:block container mx-auto">
+          <nav>
+            <ul class="flex items-center justify-center md:gap-[10px] lg:gap-[25px] 2xl:gap-[35px]">
+              <li class="flex items-center md:gap-[2px] lg:gap-[10px]">
                 <button class="flex items-center md:gap-[2px] lg:gap-[6px]">
-                  <img src="./assets/flag-1.png" alt="england" />
-                  <span class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] font-[500] block">EN</span>
+                  <div class="w-[25px] h-[15px]">
+                    <img class="w-full h-full" src="./assets/flag-1.png" alt="england" />
+                  </div>
+                  <span class="md:text-[12px] lg:text-[12px] xl:text-[18px] 2xl:text-[21px] font-medium block">EN</span>
                 </button>
+
                 <button class="flex items-center md:gap-[2px] lg:gap-[6px]">
-                  <img src="./assets/icon/eng.svg" alt="Arab" />
-                  <span class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] font-[500] block">צר</span>
+                  <div class="w-[25px] h-[15px]">
+                    <img class="w-full h-full" src="./assets/icon/eng.svg" alt="Arab" />
+                  </div>
+                  <span class="md:text-[12px] lg:text-[12px] xl:text-[18px] 2xl:text-[21px] font-medium block">צר</span>
                 </button>
-              </div>
-            </div>
-            <li>
-              <a href="./contact.html"
-                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                צור קשר </a>
-            </li>
-            <li>
-              <a href="./blog.html"
-                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                בלוג </a>
-            </li>
-            <li>
-              <a href="./products2.html"
-                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                פרויקטים חדשים </a>
-            </li>
-            <li>
-              <a href="./products.html"
-                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                נכסים להשכרה </a>
-            </li>
-            <li>
-              <a href="./productDetails.html"
-                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                דירות למכירה </a>
-            </li>
-            <li>
-              <a href="./products2.html"
-                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                קטלוג נכסים </a>
-            </li>
-            <li>
-              <a href="./about.html"
-                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                אודות </a>
-            </li>
-            <li>
-              <a href="./index.html"
-                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] border-b-2 hover:border-b-2 border-[#E40306] focus:border-b-2">
-                בית </a>
-            </li>
-          </ul>
-        </nav>
-        <button class="w-[62px] md:w-[90px] lg:w-[118px] h-[62px] flex items-center justify-center md:pr-[20px]">
-          <img src="./assets/logo.png" alt="logo" />
-        </button>
+              </li>
+
+              <li>
+                <a href="./contact.html"
+                  class="md:text-[12px] lg:text-[12px] xl:text-[18px] 2xl:text-[21px] font-medium hover:border-b-2 border-[#E40306] focus:border-b-2">
+                  צור קשר
+                </a>
+              </li>
+              <li>
+                <a href="./blog.html"
+                  class="md:text-[12px] lg:text-[12px] xl:text-[18px] 2xl:text-[21px] font-medium hover:border-b-2 border-[#E40306] focus:border-b-2">
+                  בלוג
+                </a>
+              </li>
+              <li>
+                <a href="./products2.html"
+                  class="md:text-[12px] lg:text-[12px] xl:text-[18px] 2xl:text-[21px] font-medium hover:border-b-2 border-[#E40306] focus:border-b-2">
+                  פרויקטים חדשים
+                </a>
+              </li>
+              <li>
+                <a href="./products.html"
+                  class="md:text-[12px] lg:text-[12px] xl:text-[18px] 2xl:text-[21px] font-medium hover:border-b-2 border-[#E40306] focus:border-b-2">
+                  נכסים להשכרה
+                </a>
+              </li>
+              <li>
+                <a href="./index.html"
+                  class="md:text-[12px] lg:text-[12px] xl:text-[18px] 2xl:text-[21px] font-medium hover:border-b-2 border-[#E40306] focus:border-b-2">
+                  דירות למכירה
+                </a>
+              </li>
+              <li>
+                <a href="./products2.html"
+                  class="md:text-[12px] lg:text-[12px] xl:text-[18px] 2xl:text-[21px] font-medium hover:border-b-2 border-[#E40306] focus:border-b-2">
+                  קטלוג נכסים
+                </a>
+              </li>
+              <li>
+                <a href="./about.html"
+                  class="md:text-[12px] lg:text-[12px] xl:text-[18px] 2xl:text-[21px] font-medium hover:border-b-2 border-[#E40306] focus:border-b-2">
+                  אודות
+                </a>
+              </li>
+              <li>
+                <a href="./index.html"
+                  class="md:text-[12px] lg:text-[12px] xl:text-[18px] 2xl:text-[21px] font-medium border-b-2 hover:border-b-2 border-[#E40306] focus:border-b-2">
+                  בית
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- logo -->
+        <div class="mr-5">
+          <a href="#" class="inline-block w-[65px]">
+            <img class="w-full h-full" src="./assets/logo.png" alt="" />
+          </a>
+        </div>
+
         <div class="mr-3 block lg:hidden">
           <button onclick="handleClick()" class="text-white">
-            <svg width="36px" height="36px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="inline-block" width="36px" height="36px" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
               <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
               <g id="SVGRepo_iconCarrier">
@@ -106,8 +213,9 @@
           </button>
         </div>
       </div>
+
       <div id="menu"
-        class="lg:!hidden w-[80%] sm:w-[50%] min-h-screen fixed top-0 right-0 pt-[70px] px-10 bg-black text-white !z-[999]">
+        class="lg:!hidden w-[80%] sm:w-[50%] min-h-screen fixed top-0 right-0 px-7 sm:px-10 bg-black text-white !z-[999] overflow-hidden overflow-y-scroll h-auto">
         <div class="absolute top-[15px] right-3">
           <button onclick="handleClick()" class="text-white">
             <svg width="36px" height="36px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,61 +230,88 @@
             </svg>
           </button>
         </div>
+
         <div class="text-white mt-5">
           <ul class="space-y-4">
             <li>
               <a href="./index.html"
-                class="md:text-[12px] lg:text-[14px] 2xl:text-[21px] leading-[25px] border-b-2 hover:border-b-2 border-[#E40306] focus:border-b-2">
-                בית </a>
+                class="text-[15px] md:text-[18px] font-medium border-b-2 hover:border-b-2 border-[#E40306] border-b-2 focus:border-b-2">
+                בית
+              </a>
             </li>
             <li>
               <a href="./about.html"
-                class="md:text-[12px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                אודות </a>
+                class="text-[15px] md:text-[18px] font-medium hover:border-b-2 border-[#E40306] focus:border-b-2">
+                אודות
+              </a>
             </li>
             <li>
               <a href="./products.html"
-                class="md:text-[12px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                קטלוג נכסים </a>
+                class="text-[15px] md:text-[18px] font-medium hover:border-b-2 border-[#E40306] focus:border-b-2">
+                קטלוג נכסים
+              </a>
             </li>
             <li>
               <a href="./products2.html"
-                class="md:text-[12px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                דירות למכירה </a>
+                class="text-[15px] md:text-[18px] font-medium hover:border-b-2 border-[#E40306] focus:border-b-2">
+                דירות למכירה
+              </a>
             </li>
             <li>
               <a href="./productDetails.html"
-                class="md:text-[12px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                נכסים להשכרה </a>
+                class="text-[15px] md:text-[18px] font-medium hover:border-b-2 border-[#E40306] focus:border-b-2">
+                נכסים להשכרה
+              </a>
             </li>
             <li>
               <a href="./blogDetails.html"
-                class="md:text-[12px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                פרויקטים חדשים </a>
+                class="text-[15px] md:text-[18px] font-medium hover:border-b-2 border-[#E40306] focus:border-b-2">
+                פרויקטים חדשים
+              </a>
             </li>
             <li>
               <a href="./blog.html"
-                class="md:text-[12px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                בלוג </a>
+                class="text-[15px] md:text-[18px] font-medium hover:border-b-2 border-[#E40306] focus:border-b-2">
+                בלוג
+              </a>
             </li>
 
             <li>
               <a href="./contact.html"
-                class="md:text-[12px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
-                צור קשר </a>
+                class="text-[15px] md:text-[18px] font-medium hover:border-b-2 border-[#E40306] focus:border-b-2">
+                צור קשר
+              </a>
             </li>
 
             <li>
-              <div class="flex items-center gap-[10px]">
-                <button class="flex items-center gap-[6px]">
-                  <img src="./assets/flag-1.png" alt="england" />
-                  <span class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] font-[500] block">EN</span>
+              <div class="flex items-center gap-10">
+                <button class="flex items-center gap-3">
+                  <div class="w-[25px] h-[15px]">
+                    <img class="w-full h-full" src="./assets/flag-1.png" alt="england" />
+                  </div>
+                  <span class="text-[15px] md:text-[18px] font-medium block">EN</span>
                 </button>
-                <button class="flex items-center gap-[6px]">
-                  <img src="./assets/icon/eng.svg" alt="Arab" />
-                  <span class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] font-[500] block">צר</span>
+
+                <button class="flex items-center gap-3">
+                  <div class="w-[25px] h-[15px]">
+                    <img class="w-full h-full" src="./assets/icon/eng.svg" alt="Arab" />
+                  </div>
+                  <span class="text-[15px] md:text-[18px] font-medium block">צר</span>
                 </button>
               </div>
+            </li>
+
+            <li>
+              <a href="#"
+                class="lg:hidden flex flex-col justify-center items-center w-[217px] h-full text-white bg-[#E40306]">
+                <span class="md:text-[12px] lg:text-[16px] font-semibold text-center block">
+                  לפרטים נוספי
+                </span>
+
+                <span class="md:text-[14px] lg:text-[20px] 2xl:text-[26px] font-bold block">
+                  077-997-9157
+                </span>
+              </a>
             </li>
           </ul>
         </div>
@@ -186,20 +321,30 @@
     <div
       class="flex flex-col items-center justify-start lg:justify-center absolute top-0 left-0 w-full bg-gradient-to-b from-zinc-800 to-gray-400/30 md:to-gray-400/50 h-full z-0">
       <div class="mt-[150px] w-[90%] sm:w-[75%] lg:w-auto">
-        <h3 class="text-[18px] md:text-[40px] text-right text-white font-medium">מצא את הנכס הבא שלך</h3>
+        <h3 class="text-[18px] md:text-[40px] text-right text-white font-medium">
+          מצא את הנכס הבא שלך
+        </h3>
 
         <div class="mt-[12px] md:mt-[22px] flex items-center justify-end gap-[4px]">
           <button
-            class="text-[#000000] bg-white hover:text-white hover:bg-black focus:bg-black focus:text-white duration-300 text-[14px] md:text-[19px] font-[500] py-[8px] md:py-[15px] px-[20px] md:px-[50px]">מגרשים</button>
+            class="text-[#000000] bg-white hover:text-white hover:bg-black focus:bg-black focus:text-white duration-300 text-[14px] md:text-[19px] font-[500] py-[8px] md:py-[15px] px-[20px] md:px-[50px]">
+            מגרשים
+          </button>
           <button
-            class="text-[#000000] bg-white hover:text-white hover:bg-black focus:bg-black focus:text-white duration-300 text-[14px] md:text-[19px] font-[500] py-[8px] md:py-[15px] px-[20px] md:px-[50px]">השכרה</button>
+            class="text-[#000000] bg-white hover:text-white hover:bg-black focus:bg-black focus:text-white duration-300 text-[14px] md:text-[19px] font-[500] py-[8px] md:py-[15px] px-[20px] md:px-[50px]">
+            השכרה
+          </button>
           <button
-            class="text-white bg-black focus:bg-black focus:text-white duration-300 text-[14px] md:text-[19px] font-[500] py-[8px] md:py-[15px] px-[20px] md:px-[50px] outline-none">מכירה</button>
+            class="text-white bg-black focus:bg-black focus:text-white duration-300 text-[14px] md:text-[19px] font-[500] py-[8px] md:py-[15px] px-[20px] md:px-[50px] outline-none">
+            מכירה
+          </button>
         </div>
 
         <div class="mt-1 lg:flex items-center gap-[2px] md:gap-[4px] lg:w-[800px]">
           <div class="bg-[#E40306] text-center hidden lg:block">
-            <button class="py-[15px] px-[28px] md:px-[57px] text-[19px] text-white h-[83px]">חפש</button>
+            <button class="py-[15px] px-[28px] md:px-[57px] text-[19px] text-white h-[83px]">
+              חפש
+            </button>
           </div>
           <div class="bg-white w-full">
             <div class="grid grid-cols-3 divide-y md:divide-y-0 md:divide-x text-sm sm:text-[19px] font-medium">
@@ -266,7 +411,9 @@
             </div>
           </div>
           <div class="bg-[#E40306] text-center block lg:hidden">
-            <button class="py-[15px] px-[28px] md:px-[55px] text-[19px] text-white">חפש</button>
+            <button class="py-[15px] px-[28px] md:px-[55px] text-[19px] text-white">
+              חפש
+            </button>
           </div>
         </div>
       </div>
@@ -281,7 +428,8 @@
       <div class="w-full xl:w-[24%] flex items-center justify-center">
         <h3
           class="text-[16px] px-[5px] md:text-[17px] lg:text-[40px] inline-block text-[#000000] font-semibold mb-[5px]">
-          נכסים מובילים</h3>
+          נכסים מובילים
+        </h3>
       </div>
       <div class="w-[30%] xl:w-[38%] h-[1.5px] bg-[#000000]"></div>
     </div>
@@ -300,10 +448,14 @@
             class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative lg:z-10">
             <img class="w-full h-full" src="./assets/product/Bitmap Copy 2.png" alt="product" class="" />
             <div class="mt-[18px] flex justify-between items-start">
-              <h4 class="text-right text-[#000000] text-[17px]">₪ 13,900,000</h4>
+              <h4 class="text-right text-[#000000] text-[17px]">
+                ₪ 13,900,000
+              </h4>
               <div class="text-[17px] text-right leading-[22px]">
                 רמז דוד 6 תל אביב יפו
-                <p><span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span></p>
+                <p>
+                  <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
+                </p>
               </div>
             </div>
           </div>
@@ -317,10 +469,14 @@
             class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative lg:z-10">
             <img class="w-full h-full" src="./assets/product/Bitmap Copy.png" alt="product" class="" />
             <div class="mt-[18px] flex justify-between items-start">
-              <h4 class="text-right text-[#000000] text-[17px]">₪ 6,950,000</h4>
+              <h4 class="text-right text-[#000000] text-[17px]">
+                ₪ 6,950,000
+              </h4>
               <div class="text-[17px] text-right leading-[22px]">
                 בארי תל אביב יפו
-                <p><span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span></p>
+                <p>
+                  <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
+                </p>
               </div>
             </div>
           </div>
@@ -334,10 +490,14 @@
             class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative lg:z-10">
             <img class="w-full h-full" src="./assets/product/Group 11.png" alt="product" class="" />
             <div class="mt-[18px] flex justify-between items-start">
-              <h4 class="text-right text-[#000000] text-[17px]">₪ 8,750,000</h4>
+              <h4 class="text-right text-[#000000] text-[17px]">
+                ₪ 8,750,000
+              </h4>
               <div class="text-[17px] text-right leading-[22px]">
                 בן שפרוט 2 תל אביב יפו
-                <p><span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span></p>
+                <p>
+                  <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
+                </p>
               </div>
             </div>
           </div>
@@ -358,10 +518,14 @@
               </div>
             </div>
             <div class="mt-[18px] flex justify-between items-start">
-              <h4 class="text-right text-[#000000] text-[17px]">₪ 6,500,000</h4>
+              <h4 class="text-right text-[#000000] text-[17px]">
+                ₪ 6,500,000
+              </h4>
               <div class="text-[17px] text-right leading-[22px]">
                 פנקס תל אביב יפו
-                <p><span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span></p>
+                <p>
+                  <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
+                </p>
               </div>
             </div>
           </div>
@@ -375,10 +539,14 @@
             class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative lg:z-10">
             <img class="w-full h-full" src="./assets/product/Bitmap Copy 4.png" alt="product" class="" />
             <div class="mt-[18px] flex justify-between items-start">
-              <h4 class="text-right text-[#000000] text-[17px]">₪ 9,900,000</h4>
+              <h4 class="text-right text-[#000000] text-[17px]">
+                ₪ 9,900,000
+              </h4>
               <div class="text-[17px] text-right leading-[22px]">
                 פנקס תל אביב יפו
-                <p><span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span></p>
+                <p>
+                  <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
+                </p>
               </div>
             </div>
           </div>
@@ -402,10 +570,14 @@
               </div>
             </div>
             <div class="mt-[18px] flex justify-between items-start">
-              <h4 class="text-right text-[#000000] text-[17px]">₪ 8,000,000</h4>
+              <h4 class="text-right text-[#000000] text-[17px]">
+                ₪ 8,000,000
+              </h4>
               <div class="text-[17px] text-right leading-[22px]">
                 ארלוזרוב 17 תל אביב יפו
-                <p><span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span></p>
+                <p>
+                  <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
+                </p>
               </div>
             </div>
           </div>
@@ -415,10 +587,14 @@
           <div class="md:mr-[24px] pb-5 relative lg:z-10 border-b-[1.5px] border-gray-400 xl:border-b-0">
             <img class="w-full h-full" src="./assets/product/Bitmap Copy 2.png" alt="product" class="" />
             <div class="mt-[18px] flex justify-between items-start">
-              <h4 class="text-right text-[#000000] text-[17px]">₪ 13,900,000</h4>
+              <h4 class="text-right text-[#000000] text-[17px]">
+                ₪ 13,900,000
+              </h4>
               <div class="text-[17px] text-right leading-[22px]">
                 רמז דוד 6 תל אביב יפו
-                <p><span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span></p>
+                <p>
+                  <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
+                </p>
               </div>
             </div>
           </div>
@@ -439,10 +615,14 @@
               </div>
             </div>
             <div class="mt-[18px] flex justify-between items-start">
-              <h4 class="text-right text-[#000000] text-[17px]">₪ 6,950,000</h4>
+              <h4 class="text-right text-[#000000] text-[17px]">
+                ₪ 6,950,000
+              </h4>
               <div class="text-[17px] text-right leading-[22px]">
                 בארי תל אביב יפו
-                <p><span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span></p>
+                <p>
+                  <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
+                </p>
               </div>
             </div>
           </div>
@@ -455,10 +635,14 @@
           <div class="md:mr-[24px] pb-5 relative lg:z-10">
             <img class="w-full h-full" src="./assets/product/Bitmap Copy 5.png" alt="product" class="" />
             <div class="mt-[18px] flex justify-between items-start">
-              <h4 class="text-right text-[#000000] text-[17px]">₪ 8,750,000</h4>
+              <h4 class="text-right text-[#000000] text-[17px]">
+                ₪ 8,750,000
+              </h4>
               <div class="text-[17px] text-right leading-[22px]">
                 פנקס תל אביב יפו
-                <p><span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span></p>
+                <p>
+                  <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
+                </p>
               </div>
             </div>
           </div>
@@ -468,7 +652,9 @@
         </div>
       </div>
       <div class="mt-12 text-center text-[21px] font-bold">
-        <button class="border-b-[3.5px] border-[#E50306]">צפה בכל הנכסים</button>
+        <button class="border-b-[3.5px] border-[#E50306]">
+          צפה בכל הנכסים
+        </button>
       </div>
     </div>
   </section>
@@ -482,15 +668,19 @@
         <div class="w-full md:w-[30%] flex items-center justify-center">
           <h3
             class="text-[22px] px-[5px] md:text-[17px] xl:text-[40px] inline-block text-[#000000] font-semibold mb-[5px]">
-            אודות טוסון נכסים</h3>
+            אודות טוסון נכסים
+          </h3>
         </div>
         <div class="w-[30%] md:w-[35%] h-[1.5px] bg-[#000000]"></div>
       </div>
       <div class="flex items-center justify-center mt-[10px] md:mt-[18px]">
         <div class="w-full md:w-[75%]">
-          <p class="text-[13px] text-center md:text-[17px] leading-[17px] font-medium">מוסן מנת. להאמית קרהשק סכעיט דז
-            מא, מנכם למטכין נשואי מנורך. קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף להאמית קרהשק סכעיט דז מא,
-            מנכם למטכין נשואי מנורךגולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט</p>
+          <p class="text-[13px] text-center md:text-[17px] leading-[17px] font-medium">
+            מוסן מנת. להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך.
+            קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף להאמית קרהשק
+            סכעיט דז מא, מנכם למטכין נשואי מנורךגולר מונפרר סוברט לורם שבצק
+            יהול, לכנוץ בעריר גק ליץ, ושבעגט
+          </p>
         </div>
       </div>
       <div class="my-[40px]">
@@ -558,11 +748,16 @@
               <div class="xl:w-[55%] h-[1.5px] bg-[#000000]"></div>
               <h4 class="text-[21px] md:text-[40px]">?למה לעבוד אתנו</h4>
             </div>
-            <p class="my-3 text-right w-full text-[17px]">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית צש בליא,
-              מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק. נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר
-              מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף להאמית קרהשק סכעיט דז מא, מנכם למטכין
-              נשואי מנורךגולר מונפרר סוברט לורם שבצק יהול</p>
-            <button class="text-[21px] border-b-[2px] border-[#E40306] mt-[10px] mb-[24px] px-2">קרא עוד</button>
+            <p class="my-3 text-right w-full text-[17px]">
+              לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית צש בליא,
+              מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק. נולום ארווס
+              סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק
+              מונופץ קליר, בנפת נפקט למסון בלרק - וענוף להאמית קרהשק סכעיט דז
+              מא, מנכם למטכין נשואי מנורךגולר מונפרר סוברט לורם שבצק יהול
+            </p>
+            <button class="text-[21px] border-b-[2px] border-[#E40306] mt-[10px] mb-[24px] px-2">
+              קרא עוד
+            </button>
           </div>
           <div class="w-full bg-[#E40306] text-white px-[30px] py-12 mt-6">
             <h4 class="text-right text-base xl:text-[28px] font-[500] leading-[35px] mb-[25px]">
@@ -572,8 +767,9 @@
             <form action="" class="mt-[20px] text-[17px]">
               <div class="flex justify-between flex-wrap">
                 <div class="flex items-end xl:order-1 order-2 pt-6 xl:pt-0 m-auto xl:m-0">
-                  <button class="border-b-[3px] px-2 border-gray-700 outline-none text-[14px] md:text-[20px]">שלח
-                    פרטים</button>
+                  <button class="border-b-[3px] px-2 border-gray-700 outline-none text-[14px] md:text-[20px]">
+                    שלח פרטים
+                  </button>
                 </div>
                 <div class="w-[100%] xl:w-[75%] xl:order-2 order-1">
                   <div class="w-full grid gap-[15px] grid-cols-2 mb-4">
@@ -612,7 +808,8 @@
     <div class="flex items-center w-full md:pr-[30px]">
       <div class="w-[30%] xl:w-[35%] h-[1.5px] bg-[#000000]"></div>
       <div class="w-full xl:w-[30%] flex items-center justify-center">
-        <h3 class="text-[16px] px-[5px] md:px-0 md:text-[40px] inline-block text-[#000000] font-semibold">מדיה וחדשות
+        <h3 class="text-[16px] px-[5px] md:px-0 md:text-[40px] inline-block text-[#000000] font-semibold">
+          מדיה וחדשות
         </h3>
       </div>
       <div class="w-[30%] xl:w-[35%] h-[1.5px] bg-[#000000]"></div>
@@ -625,10 +822,15 @@
             <img src="./assets/blog-details.jpg" alt="product"
               class="w-full h-full lg:h-[425px] object-center object-cover" />
             <div class="mt-[24px]">
-              <h4 class="text-[18px] font-bold text-right text-[#000000]">איך לנצל הזדמנויות בשוק הנדל"ן</h4>
-              <p class="mt-[5px] text-[15px] font-[500] text-right leading-[22px]">מוסן מנת. להאמית קרהשק סכעיט דז מא,
-                מנכם למטכין נשואי מנורך. קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף להאמית קרהשק סכעיט דז מא,
-                מנכם למטכין נשואי מנורךגולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט</p>
+              <h4 class="text-[18px] font-bold text-right text-[#000000]">
+                איך לנצל הזדמנויות בשוק הנדל"ן
+              </h4>
+              <p class="mt-[5px] text-[15px] font-[500] text-right leading-[22px]">
+                מוסן מנת. להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך.
+                קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף להאמית קרהשק
+                סכעיט דז מא, מנכם למטכין נשואי מנורךגולר מונפרר סוברט לורם
+                שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט
+              </p>
             </div>
             <div
               class="hidden lg:block w-full h-[90%] absolute top-0 left-0 z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
@@ -641,9 +843,12 @@
               <div class="md:pr-[30px]">
                 <img class="w-full h-full" src="./assets/blog/blog-2.jpg" alt="product" class="" />
                 <div class="mt-[18px] border-gray-400 border-b-[1.5px] pb-5">
-                  <h4 class="text-[20px] font-bold text-right text-[#000000]">איך לנצל הזדמנויות בשוק הנדל"ן</h4>
-                  <p class="mt-[5px] text-[17px] font-[500] text-right leading-[22px]">לורם איפסום דולור סיט אמט,
-                    קונסקטורר אדיפיסינג אלית הועניב</p>
+                  <h4 class="text-[20px] font-bold text-right text-[#000000]">
+                    איך לנצל הזדמנויות בשוק הנדל"ן
+                  </h4>
+                  <p class="mt-[5px] text-[17px] font-[500] text-right leading-[22px]">
+                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית הועניב
+                  </p>
                 </div>
               </div>
               <div
@@ -654,9 +859,12 @@
               <div class="md:pr-[30px]">
                 <img class="w-full h-full" src="./assets/blog/blog-1.jpg" alt="product" class="" />
                 <div class="mt-[18px] border-gray-400 border-b-[1.5px] pb-5">
-                  <h4 class="text-[20px] font-bold text-right text-[#000000]">איך לנצל הזדמנויות בשוק הנדל"ן</h4>
-                  <p class="mt-[5px] text-[17px] font-[500] text-right leading-[22px]">לורם איפסום דולור סיט אמט,
-                    קונסקטורר אדיפיסינג אלית הועניב</p>
+                  <h4 class="text-[20px] font-bold text-right text-[#000000]">
+                    איך לנצל הזדמנויות בשוק הנדל"ן
+                  </h4>
+                  <p class="mt-[5px] text-[17px] font-[500] text-right leading-[22px]">
+                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית הועניב
+                  </p>
                 </div>
               </div>
             </div>
@@ -664,9 +872,12 @@
               <div class="md:pr-[30px] border-b-[1.5px] border-gray-400 md:border-b-0 pb-5">
                 <img class="w-full h-full" src="./assets/blog/blog-3.jpg" alt="product" class="" />
                 <div class="mt-[18px]">
-                  <h4 class="text-[20px] font-bold text-right text-[#000000]">איך לנצל הזדמנויות בשוק הנדל"ן</h4>
-                  <p class="mt-[5px] text-[17px] font-[500] text-right leading-[22px]">לורם איפסום דולור סיט אמט,
-                    קונסקטורר אדיפיסינג אלית הועניב</p>
+                  <h4 class="text-[20px] font-bold text-right text-[#000000]">
+                    איך לנצל הזדמנויות בשוק הנדל"ן
+                  </h4>
+                  <p class="mt-[5px] text-[17px] font-[500] text-right leading-[22px]">
+                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית הועניב
+                  </p>
                 </div>
               </div>
             </div>
@@ -674,9 +885,12 @@
               <div class="md:pr-[30px]">
                 <img class="w-full h-full" src="./assets/blog/blog-4.jpg" alt="product" class="" />
                 <div class="mt-[18px]">
-                  <h4 class="text-[20px] font-bold text-right text-[#000000]">איך לנצל הזדמנויות בשוק הנדל"ן</h4>
-                  <p class="mt-[5px] text-[17px] font-[500] text-right leading-[22px]">לורם איפסום דולור סיט אמט,
-                    קונסקטורר אדיפיסינג אלית הועניב</p>
+                  <h4 class="text-[20px] font-bold text-right text-[#000000]">
+                    איך לנצל הזדמנויות בשוק הנדל"ן
+                  </h4>
+                  <p class="mt-[5px] text-[17px] font-[500] text-right leading-[22px]">
+                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית הועניב
+                  </p>
                 </div>
               </div>
             </div>
@@ -690,7 +904,9 @@
     <div class="px-[20px] md:px-[50px] py-[50px] md:py-[50px] lg:py-[70px] container mx-auto">
       <div class="grid md:grid-cols-2 lg:grid-cols-4 md:gap-[30px]">
         <div>
-          <h4 class="text-[26px] text-center font-bold leading-[20px]">ליצירת קשר</h4>
+          <h4 class="text-[26px] text-center font-bold leading-[20px]">
+            ליצירת קשר
+          </h4>
 
           <form action="" class="mt-[30px]">
             <input placeholder="שם מלא:" type="text"
@@ -700,21 +916,29 @@
             <input placeholder="אימייל:" type="text"
               class="w-full mt-[20px] text-white text-right border-b-[1.5px] border-white bg-transparent outline-none" />
             <div class="text-center mt-[30px]">
-              <button class="border-b-[3px] border-[#E40306] text-center outline-none text-[20px]">שלח פרטים</button>
+              <button class="border-b-[3px] border-[#E40306] text-center outline-none text-[20px]">
+                שלח פרטים
+              </button>
             </div>
           </form>
         </div>
         <div class="mt-10 lg:mt-0">
-          <h4 class="text-[17px] text-right font-bold leading-[24px]">פרטי התקשרות</h4>
+          <h4 class="text-[17px] text-right font-bold leading-[24px]">
+            פרטי התקשרות
+          </h4>
           <div class="mt-5 text-right text-gray-300">
             <h5>משרד: שחר נכסים-המומחה במרכז ת"א</h5>
             <h5>כתובת: אבן גבירול 85, תל אביב יפו</h5>
             <div><a href="tel:077-997-9157">טלפון : 077-997-9157</a></div>
             <h5>פקס: 03-5000000</h5>
-            <div><a href="mailto:info@shahartuson.co.il">info@shahartuson.co.il :מייל</a></div>
+            <div>
+              <a href="mailto:info@shahartuson.co.il">info@shahartuson.co.il :מייל</a>
+            </div>
 
             <div>
-              <h5 class="text-white font-bold mt-5 text-[17px]">:שעות פעילות</h5>
+              <h5 class="text-white font-bold mt-5 text-[17px]">
+                :שעות פעילות
+              </h5>
               <h5>א’-ד’ 08:30-19:00 | ה 8:30-21:00</h5>
               <h5>ו': 09:00-15:00</h5>
             </div>
@@ -742,7 +966,9 @@
           </div>
         </div>
         <div class="mt-10 lg:mt-0">
-          <h4 class="text-[17px] text-right font-bold leading-[24px]">מאמרים</h4>
+          <h4 class="text-[17px] text-right font-bold leading-[24px]">
+            מאמרים
+          </h4>
           <div class="mt-[15px] text-gray-300 text-right space-y-1">
             <a class="block" href="#"> דירות יוקרה בתל אביב</a>
             <a class="block" href="#"> דירות יוקרה להשכרה בתל אביב</a>
@@ -755,7 +981,9 @@
           </div>
         </div>
         <div class="mt-10 lg:mt-0">
-          <h4 class="text-[17px] text-right font-bold leading-[24px]">מאמרים</h4>
+          <h4 class="text-[17px] text-right font-bold leading-[24px]">
+            מאמרים
+          </h4>
           <div class="mt-[15px] space-y-1 text-right text-gray-300">
             <a class="block" href="./contact.html">עמוד בית</a>
             <a class="block" href="./blog.html">אודות</a>
