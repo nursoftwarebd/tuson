@@ -21,7 +21,7 @@
 </head>
 
 <body class="relative">
-    <div class="bg-[url('./assets/breadcrumb-bg.jpg')] w-full h-full md:h-[345px] bg-cover relative z-0">
+    <div class="bg-[url('./assets/breadcrumb-bg.jpg')] w-full h-full md:h-[345px] bg-cover relative lg:z-0">
         <header
             class="block md:flex justify-center items-center w-[100%] mx-auto lg:pt-[20px] opacity-100 fixed lg:relative top-0 left-0 z-10">
             <div class="hidden lg:flex items-center justify-center">
@@ -226,10 +226,10 @@
     </div>
 
     <!-- filter sections section -->
-    <section class="px-[20px] pt-[50px] md:py-[50px] lg:py-[70px] bg-white container mx-auto">
+    <section class="px-[40px] pt-[50px] md:py-[50px] lg:py-[70px] bg-white container mx-auto">
         <div class="mt-[50px]">
             <!-- button group -->
-            <div class="flex items-center justify-end gap-1 text-sm flex-wrap">
+            <div class="flex items-center justify-end gap-1 text-sm flex-wrap text-[18px]">
                 <button class="py-2 px-8 bg-[#E5E6E7] hover:bg-[#888888] hover:text-white duration-300 transition">
                     מגרשים
                 </button>
@@ -241,10 +241,11 @@
                 </button>
             </div>
             <!-- filters -->
-            <div class="grid grid-cols-1 lg:grid-cols-5">
+            <div class="grid grid-cols-1 lg:grid-cols-5 text-[18px]">
                 <button class="bg-[#E40306] text-white order-last lg:order-first">מצא לי נכס</button>
                 <div class="relative">
-                    <select name="" id="" class="text-right py-2 px-4 shadow w-full focus:outline-none focus:border">
+                    <select name="" id=""
+                        class="text-right py-2 px-4 shadow w-full border border-transparent focus:border-gray-200 focus:outline-none focus:border">
                         <option disabled value="מאפיינים נוספים">מאפיינים נוספים</option>
                         <option value="מאפיינים נוספים">מאפיינים נוספים</option>
                         <option value="מאפיינים נוספים">מאפיינים נוספים</option>
@@ -293,11 +294,11 @@
                 </div>
             </div>
             <div class="text-right">
-                <h3 class="mt-3 text-lg">טווח מחירים</h3>
+                <h3 class="mt-3 text-[21px]">טווח מחירים</h3>
 
                 <div class="w-[200px] ml-auto">
                     <input type="range" name="" id="" />
-                    <div class="w-full flex items-center justify-between">
+                    <div class="w-full flex items-center justify-between text-base">
                         <label for="start">0</label>
                         <label for="end">30,000,000</label>
                     </div>
@@ -309,15 +310,15 @@
     <!-- products -->
     <section class="px-[20px] bg-white container mx-auto">
         <div class="mb-[50px]">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[15px] md:gap-[24px]">
+            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[15px] md:gap-[24px]">
                 <div
-                    class="hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
+                    class="hover:hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
                     <div
-                        class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative z-10">
+                        class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative lg:z-10">
                         <img class="w-full h-full" src="./assets/product/Bitmap Copy 2.png" alt="product" class="" />
                         <div class="mt-[18px] flex justify-between items-start">
-                            <h4 class="text-right text-[#000000] text-sm font-semibold">₪ 13,900,000</h4>
-                            <div class="text-[15px] text-right leading-[22px] font-semibold">
+                            <h4 class="text-right text-[#000000] text-[17px] font-bold">₪ 13,900,000</h4>
+                            <div class="text-[17px] text-right leading-[22px] font-bold">
                                 רמז דוד 6 תל אביב יפו
                                 <p class="font-normal">
                                     <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
@@ -326,17 +327,17 @@
                         </div>
                     </div>
                     <div
-                        class="hidden lg:block w-full h-[85%] absolute top-5 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
+                        class="hidden md:block w-full h-[85%] absolute top-5 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
                     </div>
                 </div>
                 <div
                     class="hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
                     <div
-                        class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative z-10">
+                        class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative lg:z-10">
                         <img class="w-full h-full" src="./assets/product/Bitmap Copy.png" alt="product" class="" />
                         <div class="mt-[18px] flex justify-between items-start">
-                            <h4 class="text-right text-[#000000] text-sm font-semibold">₪ 6,950,000</h4>
-                            <div class="text-[15px] text-right leading-[22px] font-semibold">
+                            <h4 class="text-right text-[#000000] text-[17px] font-bold">₪ 6,950,000</h4>
+                            <div class="text-[17px] text-right leading-[22px] font-bold">
                                 בארי תל אביב יפו
                                 <p class="font-normal">
                                     <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
@@ -345,17 +346,17 @@
                         </div>
                     </div>
                     <div
-                        class="hidden lg:block w-full h-[85%] absolute top-5 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
+                        class="hidden xl:block w-full h-[85%] absolute top-5 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
                     </div>
                 </div>
                 <div
                     class="hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
                     <div
-                        class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative z-10">
+                        class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative lg:z-10">
                         <img class="w-full h-full" src="./assets/product/Group 11.png" alt="product" class="" />
                         <div class="mt-[18px] flex justify-between items-start">
-                            <h4 class="text-right text-[#000000] text-sm font-semibold">₪ 8,750,000</h4>
-                            <div class="text-[15px] text-right leading-[22px] font-semibold">
+                            <h4 class="text-right text-[#000000] text-[17px] font-bold">₪ 8,750,000</h4>
+                            <div class="text-[17px] text-right leading-[22px] font-bold">
                                 בן שפרוט 2 תל אביב יפו
                                 <p class="font-normal">
                                     <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
@@ -363,11 +364,14 @@
                             </div>
                         </div>
                     </div>
+                    <div
+                        class="hidden md:block xl:hidden w-full h-[90%] absolute top-0 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
+                    </div>
                 </div>
                 <div
                     class="hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
                     <div
-                        class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative z-10">
+                        class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative lg:z-10">
                         <div class="relative">
                             <img class="w-full h-full" src="./assets/product/Bitmap Copy 5.png" alt="product"
                                 class="" />
@@ -378,8 +382,8 @@
                             </div>
                         </div>
                         <div class="mt-[18px] flex justify-between items-start">
-                            <h4 class="text-right text-[#000000] text-sm font-semibold">₪ 6,500,000</h4>
-                            <div class="text-[15px] text-right leading-[22px] font-semibold">
+                            <h4 class="text-right text-[#000000] text-[17px] font-bold">₪ 6,500,000</h4>
+                            <div class="text-[17px] text-right leading-[22px] font-bold">
                                 פנקס תל אביב יפו
                                 <p class="font-normal">
                                     <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
@@ -388,18 +392,18 @@
                         </div>
                     </div>
                     <div
-                        class="hidden lg:block w-full h-[90%] absolute top-0 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
+                        class="hidden xl:block w-full h-[90%] absolute top-0 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
                     </div>
 
                 </div>
                 <div
                     class="hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
                     <div
-                        class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative z-10">
+                        class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative lg:z-10">
                         <img class="w-full h-full" src="./assets/product/Bitmap Copy 4.png" alt="product" class="" />
                         <div class="mt-[18px] flex justify-between items-start">
-                            <h4 class="text-right text-[#000000] text-sm font-semibold">₪ 9,900,000</h4>
-                            <div class="text-[15px] text-right leading-[22px] font-semibold">
+                            <h4 class="text-right text-[#000000] text-[17px] font-bold">₪ 9,900,000</h4>
+                            <div class="text-[17px] text-right leading-[22px] font-bold">
                                 פנקס תל אביב יפו
                                 <p class="font-normal">
                                     <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
@@ -408,13 +412,16 @@
                         </div>
                     </div>
                     <div
+                        class="hidden md:block lg:hidden w-full h-[90%] absolute top-0 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
+                    </div>
+                    <div
                         class="hidden lg:block w-full h-[90%] absolute top-0 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
                     </div>
                 </div>
                 <div
                     class="hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
                     <div
-                        class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative z-10">
+                        class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative lg:z-10">
                         <div class="relative">
                             <img class="w-full h-full" src="./assets/product/Bitmap Copy 3.png" alt="product"
                                 class="" />
@@ -425,8 +432,8 @@
                             </div>
                         </div>
                         <div class="mt-[18px] flex justify-between items-start">
-                            <h4 class="text-right text-[#000000] text-sm font-semibold">₪ 8,000,000</h4>
-                            <div class="text-[15px] text-right leading-[22px] font-semibold">
+                            <h4 class="text-right text-[#000000] text-[17px] font-bold">₪ 8,000,000</h4>
+                            <div class="text-[17px] text-right leading-[22px] font-bold">
                                 ארלוזרוב 17 תל אביב יפו
                                 <p class="font-normal">
                                     <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
@@ -437,153 +444,11 @@
                 </div>
                 <div
                     class="hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
-                    <div
-                        class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative z-10">
-                        <div class="relative">
-                            <img class="w-full h-full" src="./assets/product/Bitmap Copy 5.png" alt="product"
-                                class="" />
-                            <div class="bg-black/50 w-full h-full absolute top-0 left-0">
-                                <div class="flex items-center jusctify-center w-full h-full">
-                                    <img class="inline-block mx-auto" src="./assets/image-2.png" alt="img">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-[18px] flex justify-between items-start">
-                            <h4 class="text-right text-[#000000] text-sm font-semibold">₪ 6,500,000</h4>
-                            <div class="text-[15px] text-right leading-[22px] font-semibold">
-                                פנקס תל אביב יפו
-                                <p class="font-normal">
-                                    <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="hidden lg:block w-full h-[90%] absolute top-0 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
-                    </div>
-
-                </div>
-                <div
-                    class="hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
-                    <div
-                        class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative z-10">
-                        <img class="w-full h-full" src="./assets/product/Bitmap Copy 4.png" alt="product" class="" />
-                        <div class="mt-[18px] flex justify-between items-start">
-                            <h4 class="text-right text-[#000000] text-sm font-semibold">₪ 9,900,000</h4>
-                            <div class="text-[15px] text-right leading-[22px] font-semibold">
-                                פנקס תל אביב יפו
-                                <p class="font-normal">
-                                    <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="hidden lg:block w-full h-[90%] absolute top-0 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
-                    </div>
-                </div>
-                <div
-                    class="hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
-                    <div
-                        class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative z-10">
-                        <div class="relative">
-                            <img class="w-full h-full" src="./assets/product/Bitmap Copy 3.png" alt="product"
-                                class="" />
-                            <div class="w-full h-full absolute -top-2 -left-2">
-                                <div class="">
-                                    <img src="./assets/image-1.png" alt="img">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-[18px] flex justify-between items-start">
-                            <h4 class="text-right text-[#000000] text-sm font-semibold">₪ 8,000,000</h4>
-                            <div class="text-[15px] text-right leading-[22px] font-semibold">
-                                ארלוזרוב 17 תל אביב יפו
-                                <p class="font-normal">
-                                    <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
-                    <div
-                        class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative z-10">
-                        <div class="relative">
-                            <img class="w-full h-full" src="./assets/product/Bitmap Copy 5.png" alt="product"
-                                class="" />
-                            <div class="bg-black/50 w-full h-full absolute top-0 left-0">
-                                <div class="flex items-center jusctify-center w-full h-full">
-                                    <img class="inline-block mx-auto" src="./assets/image-2.png" alt="img">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-[18px] flex justify-between items-start">
-                            <h4 class="text-right text-[#000000] text-sm font-semibold">₪ 6,500,000</h4>
-                            <div class="text-[15px] text-right leading-[22px] font-semibold">
-                                פנקס תל אביב יפו
-                                <p class="font-normal">
-                                    <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="hidden lg:block w-full h-[90%] absolute top-0 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
-                    </div>
-
-                </div>
-                <div
-                    class="hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
-                    <div
-                        class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative z-10">
-                        <img class="w-full h-full" src="./assets/product/Bitmap Copy 4.png" alt="product" class="" />
-                        <div class="mt-[18px] flex justify-between items-start">
-                            <h4 class="text-right text-[#000000] text-sm font-semibold">₪ 9,900,000</h4>
-                            <div class="text-[15px] text-right leading-[22px] font-semibold">
-                                פנקס תל אביב יפו
-                                <p class="font-normal">
-                                    <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="hidden lg:block w-full h-[90%] absolute top-0 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
-                    </div>
-                </div>
-                <div
-                    class="hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
-                    <div
-                        class="md:mr-[24px] pb-5 border-b-[1.5px] border-gray-400 group-hover:border-transparent relative z-10 border-b-[1.5px] border-gray-400 md:border-b-0">
-                        <div class="relative">
-                            <img class="w-full h-full" src="./assets/product/Bitmap Copy 3.png" alt="product"
-                                class="" />
-                            <div class="w-full h-full absolute -top-2 -left-2">
-                                <div class="">
-                                    <img src="./assets/image-1.png" alt="img">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-[18px] flex justify-between items-start">
-                            <h4 class="text-right text-[#000000] text-sm font-semibold">₪ 8,000,000</h4>
-                            <div class="text-[15px] text-right leading-[22px] font-semibold">
-                                ארלוזרוב 17 תל אביב יפו
-                                <p class="font-normal">
-                                    <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
-                    <div class="md:mr-[24px] pb-5 relative z-10">
+                    <div class="md:mr-[24px] pb-5 relative lg:z-10 border-b-[1.5px] border-gray-400 xl:border-b-0">
                         <img class="w-full h-full" src="./assets/product/Bitmap Copy 2.png" alt="product" class="" />
                         <div class="mt-[18px] flex justify-between items-start">
-                            <h4 class="text-right text-[#000000] text-sm font-semibold">₪ 13,900,000</h4>
-                            <div class="text-[15px] text-right leading-[22px] font-semibold">
+                            <h4 class="text-right text-[#000000] text-[17px] font-bold">₪ 13,900,000</h4>
+                            <div class="text-[17px] text-right leading-[22px] font-bold">
                                 רמז דוד 6 תל אביב יפו
                                 <p class="font-normal">
                                     <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
@@ -591,13 +456,14 @@
                             </div>
                         </div>
                     </div>
+
                     <div
-                        class="hidden lg:block w-full h-[90%] absolute top-0 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
+                        class="hidden md:block w-full h-[90%] absolute top-0 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
                     </div>
                 </div>
                 <div
                     class="md:hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
-                    <div class="md:mr-[24px] pb-5 relative z-10 border-b-[1.5px] border-gray-400 md:border-b-0">
+                    <div class="md:mr-[24px] pb-5 relative lg:z-10 border-b-[1.5px] border-gray-400 xl:border-b-0">
                         <div class="relative">
                             <img class="w-full h-full" src="./assets/product/Bitmap Copy.png" alt="product" class="" />
                             <div class="w-full h-full absolute -top-2 -left-2">
@@ -607,8 +473,8 @@
                             </div>
                         </div>
                         <div class="mt-[18px] flex justify-between items-start">
-                            <h4 class="text-right text-[#000000] text-sm font-semibold">₪ 6,950,000</h4>
-                            <div class="text-[15px] text-right leading-[22px] font-semibold">
+                            <h4 class="text-right text-[#000000] text-[17px] font-bold">₪ 6,950,000</h4>
+                            <div class="text-[17px] text-right leading-[22px] font-bold">
                                 בארי תל אביב יפו
                                 <p class="font-normal">
                                     <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
@@ -617,22 +483,25 @@
                         </div>
                     </div>
                     <div
-                        class="hidden lg:block w-full h-[90%] absolute top-0 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
+                        class="hidden xl:block w-full h-[90%] absolute top-0 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
                     </div>
                 </div>
                 <div
                     class="hover:shadow-[0_5px_14px_rgba(0,0,0,0.16)] hover:rounded duration-300 transition pt-5 md:pl-5 relative group cursor-pointer">
-                    <div class="md:mr-[24px] pb-5 relative z-10">
+                    <div class="md:mr-[24px] pb-5 relative lg:z-10">
                         <img class="w-full h-full" src="./assets/product/Bitmap Copy 5.png" alt="product" class="" />
                         <div class="mt-[18px] flex justify-between items-start">
-                            <h4 class="text-right text-[#000000] text-sm font-semibold">₪ 8,750,000</h4>
-                            <div class="text-[15px] text-right leading-[22px] font-semibold">
+                            <h4 class="text-right text-[#000000] text-[17px] font-bold">₪ 8,750,000</h4>
+                            <div class="text-[17px] text-right leading-[22px] font-bold">
                                 פנקס תל אביב יפו
                                 <p class="font-normal">
                                     <span>250 מ״ר</span> <span>|</span> <span>4 חדרים</span>
                                 </p>
                             </div>
                         </div>
+                    </div>
+                    <div
+                        class="hidden md:block xl:hidden w-full h-[90%] absolute top-0 left-[10px] z-0 border-r-[1.5px] border-gray-400 group-hover:border-transparent">
                     </div>
                 </div>
             </div>
