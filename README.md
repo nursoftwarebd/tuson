@@ -1,6 +1,6 @@
 ### Pages Lists
 - Home 
-- About
+- About Us
 - Blog
 - Blog Details
 - Product
