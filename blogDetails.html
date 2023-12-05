@@ -16,13 +16,13 @@
         integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
         crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Tuson - Blog Details</title>
-
     <link rel="stylesheet" href="./css/style.css">
+    <title>Tuson - Blog Details</title>
 </head>
 
 <body class="relative">
-    <div class="bg-[url('./assets/breadcrumb-bg.jpg')] w-full h-full md:h-[345px] bg-cover relative z-0">
+    <div
+        class="bg-[url('./assets/breadcrumb-bg.jpg')] w-full h-full md:h-[245px] lg:h-[345px] bg-cover relative lg:z-0">
         <header
             class="block md:flex justify-center items-center w-[100%] mx-auto lg:pt-[20px] opacity-100 fixed lg:relative top-0 left-0 z-10">
             <div class="hidden lg:flex items-center justify-center">
@@ -62,7 +62,7 @@
                         </li>
                         <li>
                             <a href="./blog.html"
-                                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] border-b-2 hover:border-b-2 border-[#E40306] focus:border-b-2">
                                 בלוג
                             </a>
                         </li>
@@ -98,7 +98,7 @@
                         </li>
                         <li>
                             <a href="./index.html"
-                                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] border-b-2 hover:border-b-2 border-[#E40306] focus:border-b-2">
+                                class="md:text-[10px] lg:text-[12px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                                 בית
                             </a>
                         </li>
@@ -144,7 +144,7 @@
                     <ul class="space-y-4">
                         <li>
                             <a href="./index.html"
-                                class="md:text-[12px] lg:text-[14px] 2xl:text-[21px] leading-[25px] border-b-2 hover:border-b-2 border-[#E40306] focus:border-b-2">
+                                class="md:text-[12px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
                                 בית
                             </a>
                         </li>
@@ -180,7 +180,7 @@
                         </li>
                         <li>
                             <a href="./blog.html"
-                                class="md:text-[12px] lg:text-[14px] 2xl:text-[21px] leading-[25px] hover:border-b-2 border-[#E40306] focus:border-b-2">
+                                class="md:text-[12px] lg:text-[14px] 2xl:text-[21px] leading-[25px]  border-b-2 hover:border-b-2 border-[#E40306] focus:border-b-2">
                                 בלוג
                             </a>
                         </li>
@@ -212,17 +212,18 @@
         </header>
 
         <!-- breadcrumb details -->
-        <section>
-            <div
-                class="w-full h-full hidden md:flex flex-col justify-center items-center bg-white/50 absolute top-0 left-0 z-2">
-                <h2 class="text-black font-semibold text-3xl">איך לנצל הזדמנויות בשוק הנדל"ן</h2>
-            </div>
-            <div class="container text-end relative hidden md:block">
-                <div class="text-black flex items-center justify-end space-x-2 mt-5 md:mt-52 text-lg mr-10">
-                    <li>שם מאמר</li> <span> > </span>
-                    <li>בלוג</li> <span> > </span>
-                    <li>קטלוג נכסים</li> <span> > </span>
-                    <li>בית</li>
+        <section class="w-full h-full bg-white/60 lg:absolute top-0 left-0 z-2">
+            <div class="container mx-auto">
+                <div class="text-center pt-20 lg:pt-0 lg:mt-44">
+                    <h2 class="text-black font-bold  text-[35px] md:text-[40px]">איך לנצל הזדמנויות בשוק הנדל"ן</h2>
+                </div>
+                <div class="text-end py-2 pr-5 md:mt-16">
+                    <div class="flex items-center gap-2 justify-end text-[17px]">
+                        <li>שם מאמר</li> <span> > </span>
+                        <li>בלוג</li> <span> > </span>
+                        <li>קטלוג נכסים</li> <span> > </span>
+                        <li><a href="./index.html"> בית </a></li>
+                    </div>
                 </div>
             </div>
         </section>
@@ -231,12 +232,12 @@
     <!-- blog details section -->
     <section class="px-[20px] pt-[120px] md:py-[50px] lg:py-[70px] bg-white container mx-auto">
         <div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-[34px] items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-[34px] items-center">
                 <div>
-                    <img src="./assets/blog-details.jpg" alt="blog details">
+                    <img class="w-full h-full" src="./assets/blog-details.jpg" alt="blog details">
                 </div>
                 <div>
-                    <h3 class="text-[24px] font-medium text-right">לורם איפסום</h3>
+                    <h3 class="text-[21px] font-bold text-right">לורם איפסום</h3>
                     <p class="text-right mt-5 text-sm text-gray-600">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית
                         קולורס מונפרד
                         אדנדום
@@ -262,7 +263,7 @@
                 </div>
             </div>
             <div class="mt-10">
-                <h3 class="font-medium text-right">לורם איפסום</h3>
+                <h3 class="text-[21px] font-bold text-right">לורם איפסום</h3>
                 <p class="text-right mt-5 text-gray-600">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס
                     מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף
                     ליבם סולגק. בראיט <br>
@@ -292,7 +293,7 @@
                 </p>
             </div>
             <div class="mt-10">
-                <h3 class="font-medium text-right">לורם איפסום</h3>
+                <h3 class="text-[21px] font-bold text-right">לורם איפסום</h3>
                 <p class="text-right mt-5 text-gray-600">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס
                     מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף
                     ליבם סולגק. בראיט
@@ -305,55 +306,70 @@
         </div>
 
         <div class="mt-[50px]">
-            <div class="flex items-center w-full mb-12  pr-[30px]">
-                <div class="w-[35%] h-[1.5px]  border-gray-400 bg-[#000000]"></div>
-                <div class="w-full md:w-[30%] flex items-center justify-center">
-                    <h3 class="text-[16px] px-[5px] md:px-0 md:text-[30px] inline-block text-[#000000]">
+            <div class="flex items-center w-full mb-12  lg:pr-[30px]">
+                <div class="w-[30%] lg:w-[35%] h-[1.5px]  border-gray-400 bg-[#000000]"></div>
+                <div class="w-full lg:w-[30%] flex items-center justify-center">
+                    <h3 class="text-[16px] px-[5px] md:px-0 md:text-[40px] inline-block text-[#000000] font-semibold">
                         מאמרים נוספים
                     </h3>
                 </div>
-                <div class="w-[35%] h-[1.5px]  border-gray-400 bg-[#000000]"></div>
+                <div class="w-[30%] lg:w-[35%] h-[1.5px]  border-gray-400 bg-[#000000]"></div>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-[24px] mb-10">
-                <div class="md:border-r-[1.5px]  border-gray-400 ">
-                    <div class="md:mr-8 pb-5">
-                        <img src="./assets/blog/blog-1.jpg" alt="blog img" class="w-full h-full" />
-                        <div class="mt-[18px]">
-                            <h4 class="text-[16px] font-medium text-right text-[#000000]">
-                                איך לנצל הזדמנויות בשוק הנדל"ן
-                            </h4>
-                            <p class="mt-[5px] text-[15px]  text-right leading-[22px]">
-                                לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית הועניב
-                            </p>
+                <a href="./blogDetails.html">
+                    <div class="relative cursor-pointer">
+                        <div class="sm:mr-[24px] pb-5 border-b-0 sm:border-b-[1.5px] md:border-b-0 border-gray-400">
+                            <img src="./assets/blog/blog-4.jpg" alt="blog" class="w-full h-full" />
+                            <div class="mt-[18px]">
+                                <h4 class="text-[16px] font-bold text-right text-[#000000]">
+                                    איך לנצל הזדמנויות בשוק הנדל"ן
+                                </h4>
+                                <p class="mt-[5px] text-[15px] text-right leading-[22px]">
+                                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית הועניב
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="hidden sm:block w-full h-[92%] absolute top-0 left-0 lg:z-0 border-r-[1.5px] border-gray-400">
                         </div>
                     </div>
-                </div>
-                <div class="md:border-r-[1.5px]  border-gray-400 ">
-                    <div class="md:mr-8 pb-5">
-                        <img src="./assets/blog/blog-2.jpg" alt="blog img" class="w-full h-full" />
-                        <div class="mt-[18px]">
-                            <h4 class="text-[16px] font-medium text-right text-[#000000]">
-                                איך לנצל הזדמנויות בשוק הנדל"ן
-                            </h4>
-                            <p class="mt-[5px] text-[15px]  text-right leading-[22px]">
-                                לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית הועניב
-                            </p>
+                </a>
+                <a href="./blogDetails.html">
+                    <div class="relative cursor-pointer">
+                        <div class="sm:mr-[24px] pb-5 sm:border-b-[1.5px] md:border-b-0 border-gray-400 ">
+                            <img src="./assets/blog/blog-1.jpg" alt="blog" class="w-full h-full" />
+                            <div class="mt-[18px]">
+                                <h4 class="text-[16px] font-bold text-right text-[#000000]">
+                                    איך לנצל הזדמנויות בשוק הנדל"ן
+                                </h4>
+                                <p class="mt-[5px] text-[15px] text-right leading-[22px]">
+                                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית הועניב
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="hidden md:block w-full h-[92%] absolute top-0 left-0 lg:z-0 border-r-[1.5px] border-gray-400">
                         </div>
                     </div>
-                </div>
-                <div class="">
-                    <div class="md:mr-8 pb-5">
-                        <img src="./assets/blog/blog-3.jpg" alt="blog img" class="w-full h-full" />
-                        <div class="mt-[18px]">
-                            <h4 class="text-[16px] font-medium text-right text-[#000000]">
-                                איך לנצל הזדמנויות בשוק הנדל"ן
-                            </h4>
-                            <p class="mt-[5px] text-[15px]  text-right leading-[22px]">
-                                לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית הועניב
-                            </p>
+                </a>
+                <a href="./blogDetails.html">
+                    <div class="cursor-pointer relative">
+                        <div class="sm:mr-[24px] pb-5">
+                            <img src="./assets/blog/blog-2.jpg" alt="blog" class="w-full h-full" />
+                            <div class="mt-[18px]">
+                                <h4 class="text-[16px] font-bold text-right text-[#000000]">
+                                    איך לנצל הזדמנויות בשוק הנדל"ן
+                                </h4>
+                                <p class="mt-[5px] text-[15px] text-right leading-[22px]">
+                                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית הועניב
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="hidden sm:block md:hidden w-full h-[92%] absolute top-0 left-0 lg:z-0 border-r-[1.5px] border-gray-400">
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
