@@ -256,7 +256,7 @@
   <section class="px-[40px] pt-[50px] md:py-[50px] lg:py-[70px] bg-white container mx-auto">
     <div class="mt-[50px]">
       <!-- filters -->
-      <div class="grid grid-cols-1 lg:grid-cols-5 text-[18px] font-extrabold lg:divide-x-2">
+      <div class="grid lg:hidden grid-cols-1 lg:grid-cols-5 text-[18px] font-extrabold lg:divide-x-2">
         <button class="bg-[#E40306] text-white order-last lg:order-first">
           מצא לי נכס
         </button>
@@ -308,6 +308,91 @@
           <div class="absolute top-[31px] left-3">
             <img src="./assets/arrow.png" alt="img" />
           </div>
+        </div>
+      </div>
+      <div class="hidden lg:grid grid-cols-5 divide-y md:divide-y-0 md:divide-x text-sm sm:text-[19px] font-extrabold">
+        <button class="bg-[#E40306] text-white order-last lg:order-first">
+          מצא לי נכס
+        </button>
+        <div class="selector relative shadow">
+          <div class="h-[83px] " id="selectField0">
+            <img src="./assets/arrow.png" alt="arrow" id="arrowIcon0" />
+            <p id="selectText0">מחיר</p>
+          </div>
+          <ul id="list0" class="hide absolute top-[110%] font-medium">
+            <li class="options0">
+              <p>1 מחיר</p>
+            </li>
+            <li class="options0">
+              <p>2 מחיר</p>
+            </li>
+            <li class="options0">
+              <p>3 מחיר</p>
+            </li>
+            <li class="options0">
+              <p>4 מחיר</p>
+            </li>
+          </ul>
+        </div>
+        <div class="selector relative shadow">
+          <div class="h-[83px] " id="selectField">
+            <img src="./assets/arrow.png" alt="arrow" id="arrowIcon" />
+            <p id="selectText">מחיר</p>
+          </div>
+          <ul id="list" class="hide absolute top-[110%] font-medium">
+            <li class="options">
+              <p>1 מחיר</p>
+            </li>
+            <li class="options">
+              <p>2 מחיר</p>
+            </li>
+            <li class="options">
+              <p>3 מחיר</p>
+            </li>
+            <li class="options">
+              <p>4 מחיר</p>
+            </li>
+          </ul>
+        </div>
+        <div class="selector relative shadow">
+          <div class="h-[83px]" id="selectField2">
+            <img src="./assets/arrow.png" alt="arrow" id="arrowIcon2" />
+            <p id="selectText2">סוג נכס</p>
+          </div>
+          <ul id="list2" class="hide absolute top-[110%] font-medium">
+            <li class="options2">
+              <p>1 מחיר</p>
+            </li>
+            <li class="options2">
+              <p>2 מחיר</p>
+            </li>
+            <li class="options2">
+              <p>3 מחיר</p>
+            </li>
+            <li class="options2">
+              <p>4 מחיר</p>
+            </li>
+          </ul>
+        </div>
+        <div class="selector relative shadow">
+          <div class="h-[83px]" id="selectField3">
+            <img src="./assets/arrow.png" alt="arrow" id="arrowIcon3" />
+            <p id="selectText3">אזור</p>
+          </div>
+          <ul id="list3" class="hide absolute top-[110%] font-medium">
+            <li class="options3">
+              <p>1 מחיר</p>
+            </li>
+            <li class="options3">
+              <p>2 מחיר</p>
+            </li>
+            <li class="options3">
+              <p>3 מחיר</p>
+            </li>
+            <li class="options3">
+              <p>4 מחיר</p>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="text-right mt-10">
@@ -665,6 +750,7 @@
   </div>
 
   <script src="./js/menu.js"></script>
+  <script src="./js/select.js"></script>
 </body>
 
 </html>
