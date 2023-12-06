@@ -15,10 +15,28 @@ li {
 .slick-slide {
   margin: 0 10px;
 }
-
+.slick-prev,
+.slick-next {
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  line-height: 28px;
+  color: #fff;
+  background: #e40306;
+}
 .slick-prev:before,
 .slick-next:before {
-  color: #e40306;
+  font-size: 16px;
+  color: #fff;
+  font-family: "FontAwesome";
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: #fff !important;
+  background: #e40306 !important;
 }
 
 .slider-for img {
