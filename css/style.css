@@ -22,21 +22,13 @@ li {
   height: 20px;
   line-height: 28px;
   color: #fff;
-  background: #e40306;
+  background: #e40306 !important;
 }
 .slick-prev:before,
 .slick-next:before {
   font-size: 16px;
   color: #fff;
   font-family: "FontAwesome";
-}
-
-.slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus {
-  color: #fff !important;
-  background: #e40306 !important;
 }
 
 .slider-for img {
@@ -50,7 +42,6 @@ li {
 }
 
 .slider-nav img {
-  width: 80px;
   height: 80px;
   object-fit: cover;
 }
@@ -205,9 +196,9 @@ input[type="range"] {
   width: 60px;
   background-color: white;
 }
-.range-price input:first-of-type {
+/* .range-price input:first-of-type {
   margin-right: 15px;
-}
+} */
 /* range slider */
 
 .container_checkmark input {
@@ -269,8 +260,6 @@ input[type="range"] {
 
 @media only screen and (max-width: 480px) {
   .slider-for img {
-    width: 50%;
-    height: 200px;
     object-fit: cover;
   }
 
@@ -283,14 +272,10 @@ input[type="range"] {
 
 @media only screen and (max-width: 768px) {
   .slider-for img {
-    width: 50%;
-    height: 200px;
     object-fit: cover;
   }
 
   .slider-nav img {
-    width: 40px;
-    height: 40px;
     object-fit: cover;
   }
 }
