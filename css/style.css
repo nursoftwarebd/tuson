@@ -284,3 +284,9 @@ input[type="range"] {
     padding: 15px 10px;
   }
 }
+
+@media (min-width: 1536px) and (max-width: 1666px) {
+  .nav-menu {
+    gap: 18px !important;
+  }
+}
