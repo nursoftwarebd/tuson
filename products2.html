@@ -373,12 +373,10 @@
     </div>
 
     <!-- filter sections section -->
-    <section
-      class="px-[40px] pt-[50px] md:py-[50px] lg:py-[70px] bg-white container mx-auto"
-    >
+    <section class="px-[40px] bg-white container mx-auto">
       <div class="mt-[50px]">
         <!-- filters -->
-        <div
+        <!-- <div
           class="grid lg:hidden grid-cols-1 lg:grid-cols-5 text-[18px] font-extrabold lg:divide-x-2"
         >
           <button class="bg-[#E40306] text-white order-last lg:order-first">
@@ -429,7 +427,6 @@
               <img src="./assets/arrow.png" alt="img" />
             </div>
           </div>
-
           <div class="relative">
             <select
               name=""
@@ -445,19 +442,24 @@
               <img src="./assets/arrow.png" alt="img" />
             </div>
           </div>
-        </div>
+        </div> -->
+
         <div
-          class="hidden lg:grid grid-cols-5 gap-0.5 text-sm sm:text-[19px] font-extrabold"
+          class="grid lg:grid-cols-5 grid-cols-1 gap-0.5 text-sm sm:text-[19px] font-extrabold"
         >
-          <button class="bg-[#E40306] text-white order-last lg:order-first">
+          <button
+            class="bg-[#E40306] h-[83px] text-white order-last lg:order-first"
+          >
             מצא לי נכס
           </button>
+
           <div class="selector relative shadow-[0_5px_14px_rgba(0,0,0,0.1)]">
             <div class="h-[83px]" id="selectField0">
               <img src="./assets/arrow.png" alt="arrow" id="arrowIcon0" />
               <p id="selectText0">מחיר</p>
             </div>
-            <ul id="list0" class="hide absolute top-[110%] font-medium">
+
+            <ul id="list0" class="hide absolute top-[110%] font-medium z-50">
               <li class="options0">
                 <p>1 מחיר</p>
               </li>
@@ -472,12 +474,14 @@
               </li>
             </ul>
           </div>
+
           <div class="selector relative shadow-[0_5px_14px_rgba(0,0,0,0.1)]">
             <div class="h-[83px]" id="selectField">
               <img src="./assets/arrow.png" alt="arrow" id="arrowIcon" />
               <p id="selectText">מחיר</p>
             </div>
-            <ul id="list" class="hide absolute top-[110%] font-medium">
+
+            <ul id="list" class="hide absolute top-[110%] font-medium z-50">
               <li class="options">
                 <p>1 מחיר</p>
               </li>
@@ -492,12 +496,14 @@
               </li>
             </ul>
           </div>
+
           <div class="selector relative shadow-[0_5px_14px_rgba(0,0,0,0.1)]">
             <div class="h-[83px]" id="selectField2">
               <img src="./assets/arrow.png" alt="arrow" id="arrowIcon2" />
               <p id="selectText2">סוג נכס</p>
             </div>
-            <ul id="list2" class="hide absolute top-[110%] font-medium">
+
+            <ul id="list2" class="hide absolute top-[110%] font-medium z-50">
               <li class="options2">
                 <p>1 מחיר</p>
               </li>
@@ -512,12 +518,14 @@
               </li>
             </ul>
           </div>
+
           <div class="selector relative shadow-[0_5px_14px_rgba(0,0,0,0.1)]">
             <div class="h-[83px]" id="selectField3">
               <img src="./assets/arrow.png" alt="arrow" id="arrowIcon3" />
               <p id="selectText3">אזור</p>
             </div>
-            <ul id="list3" class="hide absolute top-[110%] font-medium">
+
+            <ul id="list3" class="hide absolute top-[110%] font-medium z-50">
               <li class="options3">
                 <p>1 מחיר</p>
               </li>
@@ -533,15 +541,39 @@
             </ul>
           </div>
         </div>
-        <div class="text-right mt-10">
-          <h3 class="mt-3 text-[21px] font-extrabold">טווח מחירים</h3>
 
-          <div class="w-[300px] ml-auto">
-            <input type="range" name="" id="" />
-            <div class="w-full flex items-center justify-between text-base">
-              <label for="start">0</label>
-              <label for="end">30,000,000</label>
-            </div>
+        <div class="range w-[300px] ml-auto">
+          <h3 class="mt-3 text-[21px] font-extrabold text-right">
+            טווח מחירים
+          </h3>
+
+          <div class="range-slider">
+            <span class="range-selected"></span>
+          </div>
+
+          <div class="range-input">
+            <input
+              type="range"
+              class="min"
+              min="0"
+              max="1000"
+              value="300"
+              step="10"
+            />
+            <input
+              type="range"
+              class="max"
+              min="0"
+              max="1000"
+              value="700"
+              step="10"
+            />
+          </div>
+
+          <div class="range-price">
+            <input class="w-10" type="number" name="min" disabled value="300" />
+
+            <input class="w-10" type="number" name="max" disabled value="700" />
           </div>
         </div>
       </div>
@@ -992,5 +1024,51 @@
 
     <script src="./js/menu.js"></script>
     <script src="./js/select.js"></script>
+    <script>
+      let rangeMin = 100;
+      const range = document.querySelector(".range-selected");
+      const rangeInput = document.querySelectorAll(".range-input input");
+      const rangePrice = document.querySelectorAll(".range-price input");
+
+      rangeInput.forEach((input) => {
+        input.addEventListener("input", (e) => {
+          let minRange = parseInt(rangeInput[0].value);
+          let maxRange = parseInt(rangeInput[1].value);
+          if (maxRange - minRange < rangeMin) {
+            if (e.target.className === "min") {
+              rangeInput[0].value = maxRange - rangeMin;
+            } else {
+              rangeInput[1].value = minRange + rangeMin;
+            }
+          } else {
+            rangePrice[0].value = minRange;
+            rangePrice[1].value = maxRange;
+            range.style.left = (minRange / rangeInput[0].max) * 100 + "%";
+            range.style.right =
+              100 - (maxRange / rangeInput[1].max) * 100 + "%";
+          }
+        });
+      });
+
+      rangePrice.forEach((input) => {
+        input.addEventListener("input", (e) => {
+          let minPrice = rangePrice[0].value;
+          let maxPrice = rangePrice[1].value;
+          if (
+            maxPrice - minPrice >= rangeMin &&
+            maxPrice <= rangeInput[1].max
+          ) {
+            if (e.target.className === "min") {
+              rangeInput[0].value = minPrice;
+              range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
+            } else {
+              rangeInput[1].value = maxPrice;
+              range.style.right =
+                100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>
