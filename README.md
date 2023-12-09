@@ -21,7 +21,7 @@ Install tuson with npm
     
 ## Styling with tailwind css
 
-- Run this command for getting style update.
+- Run this command for updating any styles.
 ```bash
 npx tailwindcss -i ./css/input.css -o ./dist/output.css --watch
 ```
