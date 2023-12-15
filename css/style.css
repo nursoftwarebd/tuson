@@ -7,9 +7,6 @@ body {
 .common_direction {
   direction: ltr;
 }
-.direction_change {
-  direction: rtl;
-}
 
 li {
   list-style-type: none;
