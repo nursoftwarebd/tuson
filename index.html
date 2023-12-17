@@ -184,9 +184,9 @@
       <!-- banner details -->
       <div class="flex flex-col items-center justify-start lg:justify-center absolute top-0 left-0 w-full bg-gradient-to-b from-zinc-800 to-gray-400/30 md:to-gray-400/50 h-full z-0">
         <div class="mt-[150px] w-[90%] sm:w-[75%] lg:w-auto">
-          <h3 class="text-[18px] md:text-[40px] text-right text-white font-medium">מצא את הנכס הבא שלך</h3>
+          <h3 class="text-[18px] md:text-[40px] flex items-center justify-end text-white font-medium">מצא את הנכס הבא שלך</h3>
 
-          <div class="mt-[12px] md:mt-[22px] flex items-center justify-end gap-[4px] common_direction">
+          <div class="mt-[12px] md:mt-[22px] flex items-center justify-end gap-[4px]">
             <button
               class="text-[#000000] bg-white hover:text-white hover:bg-black focus:bg-black focus:text-white duration-300 text-[14px] md:text-[19px] font-[500] py-[8px] md:py-[15px] px-[20px] md:px-[50px]"
             >
@@ -536,10 +536,9 @@
           </div>
           <div class="text-right text-[#000000]">
             <div class="common_direction">
-              <h3 class="text-[21px] md:text-[40px]">טוסון נכסים</h3>
               <div class="flex items-center justify-end gap-4">
-                <div class="xl:w-[55%] h-[1.5px] bg-[#000000]"></div>
-                <h4 class="text-[21px] md:text-[40px]">?למה לעבוד אתנו</h4>
+                <div style="margin-top: 60px" class="hidden xl:block xl:w-[55%] h-[1.5px] bg-[#000000]"></div>
+                <h3 class="text-[21px] md:text-[40px] flex flex-col"><span>טוסון נכסים</span><span>?למה לעבוד אתנו</span></h3>
               </div>
               <p class="my-3 text-right w-full text-[17px]">
                 לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק. נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו
@@ -667,6 +666,36 @@
       </div>
     </section>
 
+    <div class="sticky bottom-[86px] left-0 z-50">
+      <div class="w-[50px] h-auto">
+        <div class="px-[12px] py-[14px] bg-[#000000]">
+          <div class="space-y-[10px]">
+            <a
+              href="#"
+              class="w-[28px] h-[28px] text-[#000000] hover:text-white duration-500 hover:bg-gradient-to-r from-[#ee2a7b] to-[#6228d7] bg-white rounded-full flex items-center justify-center"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="#"
+              class="w-[28px] h-[28px] bg-white duration-500 text-[#000000] hover:text-white rounded-full hover:bg-gradient-to-r from-[#30518E] to-[#2B2E7D] flex items-center justify-center"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="#"
+              class="w-[28px] h-[28px] bg-white duration-500 text-[#000000] hover:text-white rounded-full hover:bg-gradient-to-r from-[#1188CB] to-[#0071BC] flex items-center justify-center"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="w-[28px] h-[28px] bg-white duration-500 text-[#000000] hover:text-white rounded-full hover:bg-[#CD201F] flex items-center justify-center">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="bg-[#000000] text-white">
       <div class="px-[20px] md:px-[50px] py-[50px] md:py-[50px] lg:py-[70px] container mx-auto">
         <div class="grid md:grid-cols-2 lg:grid-cols-4 md:gap-[30px]">
@@ -755,37 +784,6 @@
         </div>
       </div>
     </footer>
-    <!-- social media -->
-
-    <div class="sticky bottom-[86px] left-0 z-50">
-      <div class="w-[50px] h-auto">
-        <div class="px-[12px] py-[14px] bg-[#000000]">
-          <div class="space-y-[10px]">
-            <a
-              href="#"
-              class="w-[28px] h-[28px] text-[#000000] hover:text-white duration-500 hover:bg-gradient-to-r from-[#ee2a7b] to-[#6228d7] bg-white rounded-full flex items-center justify-center"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a
-              href="#"
-              class="w-[28px] h-[28px] bg-white duration-500 text-[#000000] hover:text-white rounded-full hover:bg-gradient-to-r from-[#30518E] to-[#2B2E7D] flex items-center justify-center"
-            >
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a
-              href="#"
-              class="w-[28px] h-[28px] bg-white duration-500 text-[#000000] hover:text-white rounded-full hover:bg-gradient-to-r from-[#1188CB] to-[#0071BC] flex items-center justify-center"
-            >
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="w-[28px] h-[28px] bg-white duration-500 text-[#000000] hover:text-white rounded-full hover:bg-[#CD201F] flex items-center justify-center">
-              <i class="fab fa-youtube"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- js custom scripts here -->
     <script src="./js/menu.js"></script>
